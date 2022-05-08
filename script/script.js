@@ -1,3 +1,21 @@
+const scrollTop = $('.scrollTop');
+$(window).scroll(function() {
+    var topPos = $(this).scrollTop();
+    if (topPos > 100) {
+        $(scrollTop).css('opacity', '0.8');
+
+    } else {
+        $(scrollTop).css('opacity', '0');
+    }
+
+});
+$(scrollTop).click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 800);
+    return false;
+});
+
 const iconControls = document.querySelectorAll('.iconControl .title');
 iconControls.forEach((iconControl) => {
     iconControl.addEventListener('click', function() {

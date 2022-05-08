@@ -3,6 +3,7 @@
 :root {
     --primary: #38b4c4;
     --primary-darker: #3b8c97;
+    --secondary: #ec7a3b;
     --gray: #dbdbdb;
     --dark: #383838;
 }
@@ -188,7 +189,7 @@ ul.topMenu li a:hover {
 }
 
 .mobileNav {
-    position: absolute;
+    position: fixed;
     top: 65px;
     right: 0;
     left: 0;
@@ -202,6 +203,7 @@ ul.topMenu li a:hover {
     align-items: flex-end;
     cursor: pointer;
     margin: 0 7px;
+    height: fit-content;
 }
 
 .mobileNav .title .fab {
@@ -443,7 +445,7 @@ ul.topMenu li a:hover {
 .navigation {
     position: fixed;
     left: 0;
-    top: 38px;
+    top: 5px;
     height: 100%;
     background: #fff;
     z-index: 1001;
@@ -554,7 +556,7 @@ ul.topMenu li a:hover {
 
 .container {
     width: 100%;
-    padding: 30px;
+    padding: 25px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -758,6 +760,20 @@ footer {
 
 .footerLink img {
     margin-right: 10px;
+}
+
+.scrollTop {
+    position: fixed;
+    right: 10%;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 @media screen and (max-width: 768px) {
