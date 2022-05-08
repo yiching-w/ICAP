@@ -1,6 +1,35 @@
-const search = document.querySelector('.search');
-search.addEventListener('click', () => {
-    search.classList.toggle('active');
+const iconControls = document.querySelectorAll('.iconControl .title');
+iconControls.forEach((iconControl) => {
+    iconControl.addEventListener('click', function() {
+        let i = iconControl;
+        if (iconControl.classList.contains('active')) {
+            iconControl.classList.remove('active');
+        } else {
+            iconControls.forEach((iconControl) => {
+                if (i !== iconControl) {
+                    iconControl.classList.remove('active');
+                }
+            })
+            iconControl.classList.add('active');
+        }
+    });
+});
+
+const mobileNavs = document.querySelectorAll('.mobileNav .title');
+mobileNavs.forEach((mobileNav) => {
+    mobileNav.addEventListener('click', function() {
+        let m = mobileNav;
+        if (mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+        } else {
+            mobileNavs.forEach((mobileNav) => {
+                if (m !== mobileNav) {
+                    mobileNav.classList.remove('active');
+                }
+            })
+            mobileNav.classList.add('active');
+        }
+    });
 });
 
 $(document).on("click", ".burger, .navigation-backdrop", function() {
@@ -28,65 +57,19 @@ $(window).bind('scroll', function() {
     }
 });
 
-const items = document.querySelectorAll('.menItem');
-
-$('.menItem').click(function() {
-    items.forEach((item) => {
-        item.classList.remove('active');
+const items = document.querySelectorAll('.menuItem.has-collapsible');
+items.forEach((item) => {
+    item.addEventListener('click', function() {
+        let i = item;
+        if (item.classList.contains('active')) {
+            item.classList.remove('active');
+        } else {
+            items.forEach((item) => {
+                if (i !== item) {
+                    item.classList.remove('active');
+                }
+            })
+            item.classList.add('active');
+        }
     });
-    $(this).toggleClass('active');
-});
-
-/*
-Reference: http://jsfiddle.net/BB3JK/47/
-*/
-
-$('select').each(function() {
-    var $this = $(this),
-        numberOfOptions = $(this).children('option').length;
-
-    $this.addClass('select-hidden');
-    $this.wrap('<div class="select"></div>');
-    $this.after('<div class="select-styled"></div>');
-
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-
-    var $list = $('<ul />', {
-        'class': 'select-options'
-    }).insertAfter($styledSelect);
-
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-        //if ($this.children('option').eq(i).is(':selected')){
-        //  $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
-        //}
-    }
-
-    var $listItems = $list.children('li');
-
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function() {
-            $(this).removeClass('active').next('ul.select-options').hide();
-        });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });
-
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
-
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-
 });
