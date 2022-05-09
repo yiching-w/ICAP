@@ -176,7 +176,7 @@
                 <div class="line3"></div>
             </div>
             <div class="logo">
-                <img src="image/logo.png" />
+                <a href="#"><img src="image/logo.png"></a>
             </div>
             <div class="iconControl">
                 <div class="title member">
@@ -225,7 +225,7 @@
       </div>
     </div>
     <div class="title">
-      <div class="fab">本站服務</div>
+      <div class="fab"><i class="fas fa-arrow-alt-circle-down"></i>本站服務</div>
       <div class="fac">
         <a href="/about.aspx" target="_self" title="關於本計畫"
           >關於本計畫</a
@@ -534,99 +534,82 @@
             <h3 class="cardTitle">查詢STEP 1</h3>
             <form>
               <div class="form-group">
-                <label
-                  >輸入關鍵字
+                <label>輸入關鍵字</label>
                   <input type="text" class="form-control" />
                 </label>
               </div>
               <div class="form-group">
-                <label
-                  >年度
+                <label>年度</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="form-group">
-                <label
-                  >發展單位
+                <label>發展單位</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="form-group">
-                <label
-                  >領域類別
+                <label>領域類別</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="form-group">
-                <label
-                  >行業別
+                <label>行業別</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="form-group">
-                <label
-                  >通俗職業分類：
+                <label>通俗職業分類</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="form-group">
-                <label
-                  >職能基準級別
+                <label>職能基準級別</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <h3 class="cardTitle">查詢STEP 2</h3>
               <div class="form-group">
-                <label
-                  >職能基準類型
+                <label>職能基準類型</label>
                   <select class="form-select">
                     <option selected>全部</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="form-group">
-                <label
-                  >是否查詢現行基準版本
+                <label>是否查詢現行基準版本</label>
                   <select class="form-select">
                     <option selected>是</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </label>
               </div>
               <div class="btnWrap">
                 <button type="submit" class="btn">開始查詢</button>
@@ -638,27 +621,48 @@
       </div>
     </main>
     <footer>
-      <div class="scrollTop"><i class="fas fa-chevron-up"></i></div>
-      <div>維運單位：「職能基準發展與應用推動計畫」專案辦公室</div>
-      <div>聯絡電話：02-2701-6565 分機334</div>
-      <div>
-        服務時間：週一至週五　上午8時30分至12時30分，下午1時30分至5時30分
-      </div>
-      <div class="footerIconWrap">
-        <div class="footerIcon">
-          <img src="image/7.png" />版權所有：勞動部勞動力發展署
+      <div class="floatNav" id="navbar">
+        <div class="nav__container">
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <a href="#" class="nav__link">
+                            <i class="fas fa-user"></i>
+                            <span class="nav__name">會員專區</span>
+                        </a>
+                        <a href="#" class="nav__link">
+                            <i class="fas fa-toolbox"></i>
+                            <span class="nav__name">職能應用工具</span>
+                        </a>
+                        <div class="scrollTop">
+                            <i class="fas fa-chevron-up"></i>
+                            <span class="nav__name">回到頁首</span>
+                        </div>
+                </div>
+            </div>
         </div>
-        <div class="footerIcon">
-          <img src="image/7.png" />主辦單位：勞動部勞動力發展署
         </div>
-      </div>
-      <div class="footerLink">
-        <img src="image/gov_03.png" alt="E政府" />
-        <img src="image/aa.jpg" width="90px" alt="無障礙標章" />
-        <img src="image/line.png" width="90px" alt="line@" />
-      </div>
-    </footer>
-    <script src="script/jquery-3.3.0.min.js"></script>
-    <script src="script/script.js"></script>
-  </body>
+        <div>維運單位：「職能基準發展與應用推動計畫」專案辦公室</div>
+        <div>聯絡電話：02-2701-6565 分機334</div>
+        <div>
+            服務時間：週一至週五　上午8時30分至12時30分，下午1時30分至5時30分
+        </div>
+        <div class="footerIconWrap">
+            <div class="footerIcon">
+                <img src="image/7.png" />版權所有：勞動部勞動力發展署
+            </div>
+            <div class="footerIcon">
+                <img src="image/7.png" />主辦單位：勞動部勞動力發展署
+            </div>
+        </div>
+        <div class="footerLink">
+            <img src="image/gov_03.png" alt="E政府" />
+            <img src="image/aa.jpg" width="90px" alt="無障礙標章" />
+            <img src="image/line.png" width="90px" alt="line@" />
+        </div>
+        </footer>
+        <script src="script/jquery-3.3.0.min.js"></script>
+        <script src="script/script.js"></script>
+</body>
+
 </html>
