@@ -1,16 +1,14 @@
 const scrollTop = $('.scrollTop');
-$(window).scroll(function() {
-    let topPos = $(this).scrollTop();
-    if (topPos > 100) {
-        $(scrollTop).css('opacity', '1');
-        $(scrollTop).css('display', 'flex');
+// $(window).scroll(function() {
+//     let topPos = $(this).scrollTop();
+//     if (topPos > 100) {
+//         $(scrollTop).css('opacity', '1');
 
-    } else {
-        $(scrollTop).css('opacity', '0');
-        $(scrollTop).css('display', 'none');
-    }
+//     } else {
+//         $(scrollTop).css('opacity', '0');
+//     }
 
-});
+// });
 $(scrollTop).click(function() {
     $('html, body').animate({
         scrollTop: 0
@@ -18,21 +16,9 @@ $(scrollTop).click(function() {
     return false;
 });
 
-const iconControls = document.querySelectorAll('.iconControl .title');
-iconControls.forEach((iconControl) => {
-    iconControl.addEventListener('click', function() {
-        let i = iconControl;
-        if (iconControl.classList.contains('active')) {
-            iconControl.classList.remove('active');
-        } else {
-            iconControls.forEach((iconControl) => {
-                if (i !== iconControl) {
-                    iconControl.classList.remove('active');
-                }
-            })
-            iconControl.classList.add('active');
-        }
-    });
+const search = document.querySelector('.search');
+search.addEventListener('click', function() {
+    search.classList.toggle('active');
 });
 
 const mobileNavs = document.querySelectorAll('.mobileNav .title');

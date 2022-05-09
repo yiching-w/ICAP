@@ -119,20 +119,12 @@ ul.topMenu li a:hover {
     width: 100%;
 }
 
-.iconControl {
-    display: flex;
-}
-
-.iconControl .title {
+.search {
     position: relative;
     cursor: pointer;
 }
 
-.iconControl .title.member {
-    margin-right: 10px;
-}
-
-.iconControl .fab {
+.search .fab {
     background: var(--primary);
     color: #fff;
     width: 40px;
@@ -146,7 +138,7 @@ ul.topMenu li a:hover {
     animation: fab-animation-reverse 0.4s ease-out forwards;
 }
 
-.iconControl .title .fac {
+.search .fac {
     width: 100px;
     border-radius: 10px;
     position: absolute;
@@ -166,26 +158,26 @@ ul.topMenu li a:hover {
     display: none;
 }
 
-.iconControl .title.active .fac {
+.search.active .fac {
     animation: fac-animation 0.4s ease-out forwards 0.1s;
     top: 45px;
     opacity: 1;
     display: flex;
 }
 
-.iconControl .title .fac a {
+.search .fac a {
     margin-bottom: 10px;
 }
 
-.iconControl .title .fac a:last-child {
+.search .fac a:last-child {
     margin-bottom: 0;
 }
 
-.iconControl .title .fac a:hover {
+.search .fac a:hover {
     color: var(--primary-darker);
 }
 
-.iconControl .title.active .fab {
+.search.active .fab {
     animation: fab-animation 0.4s ease-out forwards;
 }
 
@@ -843,13 +835,6 @@ footer {
     transition: 0.4s ease-in-out;
 }
 
-.scrollTop {
-    display: none;
-    opacity: 0;
-    transition: all 0.4s ease-in-out 0s;
-    cursor: pointer;
-}
-
 .floatNav-container {
     height: 100%;
     display: flex;
@@ -871,12 +856,18 @@ footer {
     justify-content: center;
 }
 
+.floatNav-items.scrollTop {
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+}
+
 .floatNav-item {
     display: flex;
     align-items: center;
     color: #fff;
     font-size: 1.5em;
     height: 35px;
+    width: 100%;
 }
 
 .floatNav-name {
