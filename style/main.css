@@ -366,7 +366,7 @@ ul.topMenu li a:hover {
 }
 
 .navList ul.menu li a {
-    color: #fff;
+    color: var(--dark);
 }
 
 .navList ul.menu li:hover>.submenuarea {
@@ -599,6 +599,12 @@ ul.topMenu li a:hover {
     margin-right: 40px;
 }
 
+@media (max-width: 991px) {
+    .left {
+        flex-basis: 190px;
+    }
+}
+
 .leftCard {
     position: relative;
     margin: 0px 0 25px 0;
@@ -607,7 +613,7 @@ ul.topMenu li a:hover {
 
 .leftCard .title {
     font-size: 1.1em;
-    background: linear-gradient(90deg, #38b4c4, #3b8c97);
+    background: linear-gradient(90deg, #FF5151, #EF874E);
     color: #fff;
     padding: 10px 30px;
     border-radius: 5px;
@@ -670,6 +676,33 @@ ul.topMenu li a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+
+.currentTab {
+    font-size: 0.9rem;
+    margin: 6px 0 10px;
+    color: var(--primary-darker);
+}
+
+.currentTab a:hover {
+    color: var(--primary-darker);
+}
+
+.currentTab span::after {
+    content: '\f061';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.currentTab span:last-child:after {
+    content: '';
+}
+
+@media (max-width: 768px) {
+    .currentTab {
+        text-align: center;
+    }
 }
 
 .form-group {
