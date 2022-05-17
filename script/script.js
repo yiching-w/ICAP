@@ -1,14 +1,4 @@
 const scrollTop = $('.scrollTop');
-// $(window).scroll(function() {
-//     let topPos = $(this).scrollTop();
-//     if (topPos > 100) {
-//         $(scrollTop).css('opacity', '1');
-
-//     } else {
-//         $(scrollTop).css('opacity', '0');
-//     }
-
-// });
 $(scrollTop).click(function() {
     $('html, body').animate({
         scrollTop: 0
@@ -77,5 +67,14 @@ items.forEach((item) => {
             })
             item.classList.add('active');
         }
+    });
+});
+
+const fontSizeBtns = document.querySelectorAll('.fontSizeBtn');
+fontSizeBtns.forEach(fontSizeBtn=>{
+    fontSizeBtn.addEventListener('click', function(){
+        fontSizeBtns.forEach(fontSizeBtn=>$(fontSizeBtn).removeClass('active'));   
+        $('body').css('font-size', $(this).data('size'));
+        $(this).addClass('active');
     });
 });
