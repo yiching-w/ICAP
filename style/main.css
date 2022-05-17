@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 :root {
     --primary: #38b4c4;
@@ -21,7 +23,7 @@
 
 body {
     color: var(--dark);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 1em;
 }
 
