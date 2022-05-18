@@ -86,11 +86,19 @@ ul.topMenu li a:hover {
     color: var(--primary-darker);
 }
 
+.rightArea {
+    display: flex;
+}
+
 .fontChange {
-    margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 15px;
+}
+
+.fontChange ul {
+    display: flex;
 }
 
 .fontChange ul li {
