@@ -8,6 +8,7 @@
     --secondary: #ec7a3b;
     --gray: #dbdbdb;
     --dark: #383838;
+    --orange-gradient: linear-gradient(120deg, #cf4342, #EF874E);
 }
 
 *,
@@ -49,9 +50,12 @@ a {
     color: var(--dark);
 }
 
-ul {
-    list-style: none;
-}
+a:focus {
+    outline: 2px solid #15616d !important;
+    padding: 2px;
+    outline-offset: -2px;
+    border-radius: 4px;
+}   
 
 .topHeader {
     display: flex;
@@ -76,10 +80,14 @@ ul.topMenu li::before {
     content: "";
     width: 1px;
     height: 12px;
-    background-color: #000;
+    background-color: var(--dark);
     position: absolute;
     left: -11px;
-    top: 4px;
+    top: 5px;
+}
+
+ul.topMenu li:first-child:before {
+    width: 0;
 }
 
 ul.topMenu li a:hover {
@@ -140,6 +148,10 @@ ul.topMenu li a:hover {
 
 .logo {
     width: 400px;
+}
+
+.logo a {
+    display: inline-block;
 }
 
 .logo img {
@@ -541,6 +553,13 @@ ul.topMenu li a:hover {
     color: var(--primary-darker);
 }
 
+
+@media screen and (min-width: 768px) {
+    aside {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .topHeader,
     .navList,
@@ -644,7 +663,7 @@ ul.topMenu li a:hover {
 
 .leftCard .title {
     font-size: 1.1em;
-    background: linear-gradient(90deg, #FF5151, #EF874E);
+    background: var(--orange-gradient);
     color: #fff;
     padding: 10px 30px;
     border-radius: 5px;
@@ -698,7 +717,7 @@ ul.topMenu li a:hover {
     font-size: 1.5em;
     width: fit-content;
     color: var(--primary-darker);
-    margin: 8px 0;
+    margin: 8px 0 15px;
     border-bottom: 4px solid var(--primary-darker);
 }
 
@@ -707,6 +726,10 @@ ul.topMenu li a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+
+.right {
+    width: 100%;
 }
 
 .currentTab {
@@ -857,7 +880,7 @@ footer {
     width: 43px;
     height: auto;
     padding: 1rem 0;
-    background: linear-gradient(to bottom, #ff5151dd, #ef874edd);
+    background: var(--orange-gradient);
     box-shadow: 1px 0 0 rgba(22, 8, 43, 0.1);
     border-radius: 5px;
     cursor: pointer;
@@ -922,41 +945,19 @@ footer {
     display: flex;
 }
 
-a[accesskey] {
-    transform: translate(-8px, -2px);
-    opacity: 0;
-    transition: 0.3s;
-}
-
-a[accesskey]:hover {
-    opacity: 1;
-}
-
 .goCenter {
     position: absolute;
-    top: -2.2em;
-    left: 50%;
-    margin-left: -480px;
-    padding: 0 .5em;
-    height: 2em;
-    line-height: 2em;
-    background-color: #ccc;
-    color: #fff;
+    top: 0;
+    left: 0;
+    font-size: 0.9em;
     text-decoration: none;
     z-index: 999999999999;
     opacity: 0;
     transition: .5s;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 4px;
 }
-
-.goCenter:hover,
-.goCenter:focus {
+    
+.goCenter:focus {   
     outline: none;
-    top: 0;
     opacity: 1;
 }
-
-
-/* .mya_blur {
-    color: #FFFFFF !important;
-} */

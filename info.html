@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/search.css" />
+    <link rel="stylesheet" href="style/info.css" />
     <title>ICAP</title>
 </head>
 
@@ -415,125 +415,65 @@
                     <span><a href="#">職能基準查詢</a></span>
                 </div>
                 <div class="card">
-                    <h3 class="cardTitle">基本查詢說明</h3>
-                    <p>
-                        職能基準是指「為完成特定職業或職類工作，所應具備之能力組合」。<br /> 職能基準類型包含指由各部會所發展之職能基準，或者各部會所訂定相關的專業職能組合或技能檢定規範
-                    </p>
-                    <p>
-                        <span>查詢方式: 請您先依Step
-                1輸入關鍵字、或加上以「發展單位、行業別、領域別、基準級別」不同條件，再以Step
-                2 選擇職能基準類型，進行查詢</span
-              >
-              <br />
-              <br />
-              <span
-                >舉例說明:
-                您想查詢要從事「綜合零售業門市主管」這個職業，需要做哪些工作、具備哪些職能，及應展現哪些行為?</span
-              >
-              <br />
-              <span
-                >您可以於Step 1
-                輸入「門市主管」進行查詢，或者再加上選擇「行業別/批發及零售業」，再於Step
-                2 選擇全部，進行查詢</span
-              >
-              <br />
-              <br />
-              <span
-                >若您使用以下查詢條件無法查詢相關資料，您可以點選「進階查詢」鈕選擇其他查詢方式。</span
-              >
-            </p>
-            <p>
-              「若您不確定所要查詢的職能項目為何，此提供<span
-                >「若您不確定所要查詢的職能項目為何，此提供【職能基準一覽表】，您可以點選下載一覽表進行檢索，找到相近職能項目，再進一步查詢內容。」</span
-              >
-            </p>
-            <p></p>
-          </div>
-          <div class="card">
-            <h3 class="cardTitle">查詢STEP 1</h3>
-            <form>
-              <div class="form-group">
-                <label>輸入關鍵字</label>
-                  <input type="text" class="form-control" />
-                </label>
-              </div>
-              <div class="form-group">
-                <label>年度</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>發展單位</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>領域類別</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>行業別</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>通俗職業分類</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>職能基準級別</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <h3 class="cardTitle">查詢STEP 2</h3>
-              <div class="form-group">
-                <label>職能基準類型</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>是否查詢現行基準版本</label>
-                  <select class="form-select">
-                    <option selected>是</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="btnWrap">
-                <button type="submit" class="btn">開始查詢</button>
-              </div>
-            </form>
+                    <h3 class="cardTitle">職能基準資訊說明</h3>
+                    <table class="table resultList">
+                        <tbody role="rowgroup">
+                          <tr role="row">
+                            <td role="cell">職能項目代碼</td>
+                            <td role="cell">MMP4321-001v3</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">職能項目名稱</td>
+                            <td role="cell">倉管助理</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">發展單位</td>
+                            <td role="cell">勞動部</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">職能類型</td>
+                            <td role="cell">各部會之職能基準</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">所屬行業別</td>
+                            <td role="cell">倉儲業</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">所屬領域別</td>
+                            <td role="cell">資材及庫存規劃</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">通俗職業分類</td>
+                            <td role="cell">無</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">所屬通俗職務名稱</td>
+                            <td role="cell">無</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">文件下載</td>
+                            <td role="cell" class="icon">
+                                <a href="#"><i class="fas fa-file-pdf"></i></a>
+                                <a href="#"><i class="fas fa-file-download"></i></a>
+                            </td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">意見回饋</td>
+                            <td role="cell" class="icon">
+                                <a href="#"><i class="fas fa-pen"></i></a>
+                            </td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">相關聯課程</td>
+                            <td role="cell">無</td>
+                          </tr>
+                          <tr role="row">
+                            <td role="cell">歷史版本</td>
+                            <td role="cell">倉管人員
+                                倉管人員</td>
+                          </tr>
+                        </tbody>
+                      </table>
           </div>
         </div>
       </div>
@@ -581,7 +521,7 @@
         </footer>
         <script src="script/jquery-3.3.0.min.js"></script>
         <script src="script/main.js"></script>
-        <script src="script/search.js"></script>
+        <script src="script/info    .js"></script>
 </body>
 
 </html>

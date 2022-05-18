@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/search.css" />
+    <link rel="stylesheet" href="style/result.css" />
     <title>ICAP</title>
 </head>
 
@@ -415,126 +415,128 @@
                     <span><a href="#">職能基準查詢</a></span>
                 </div>
                 <div class="card">
-                    <h3 class="cardTitle">基本查詢說明</h3>
-                    <p>
-                        職能基準是指「為完成特定職業或職類工作，所應具備之能力組合」。<br /> 職能基準類型包含指由各部會所發展之職能基準，或者各部會所訂定相關的專業職能組合或技能檢定規範
-                    </p>
-                    <p>
-                        <span>查詢方式: 請您先依Step
-                1輸入關鍵字、或加上以「發展單位、行業別、領域別、基準級別」不同條件，再以Step
-                2 選擇職能基準類型，進行查詢</span
-              >
-              <br />
-              <br />
-              <span
-                >舉例說明:
-                您想查詢要從事「綜合零售業門市主管」這個職業，需要做哪些工作、具備哪些職能，及應展現哪些行為?</span
-              >
-              <br />
-              <span
-                >您可以於Step 1
-                輸入「門市主管」進行查詢，或者再加上選擇「行業別/批發及零售業」，再於Step
-                2 選擇全部，進行查詢</span
-              >
-              <br />
-              <br />
-              <span
-                >若您使用以下查詢條件無法查詢相關資料，您可以點選「進階查詢」鈕選擇其他查詢方式。</span
-              >
-            </p>
-            <p>
-              「若您不確定所要查詢的職能項目為何，此提供<span
-                >「若您不確定所要查詢的職能項目為何，此提供【職能基準一覽表】，您可以點選下載一覽表進行檢索，找到相近職能項目，再進一步查詢內容。」</span
-              >
-            </p>
-            <p></p>
+                    <h3 class="cardTitle">職能基準查詢結果列表</h3>
+                    <table class="table_01">
+                        <tbody><tr>
+                            <td class="labelClass_03" width="20%">目前搜尋條件：
+                            </td>
+                            <td>
+                                <span id="ctl00_ContentPlaceHolderNoMenu_condition1" style="color:#E00000;">全部職能基準</span>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td class="labelClass_03" valign="top">查詢結果如下：
+                            </td>
+                            <td>
+                                共計<span id="ctl00_ContentPlaceHolderNoMenu_resultCount" style="color:#E00000;">1017</span>項，其中<br>
+                                1.各部會職業別之職能基準：<span id="ctl00_ContentPlaceHolderNoMenu_icapCount" style="color:#E00000;">699</span>項<br>
+                                2.勞動部技能檢定規範：<span id="ctl00_ContentPlaceHolderNoMenu_wdaCount" style="color:#E00000;">252</span>項<br>
+                                3.教育部專業職能：<span id="ctl00_ContentPlaceHolderNoMenu_ucanCount" style="color:#E00000;">66</span>項
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td colspan="2">請留意：<br>
+                                1.若您想下載職能基準檔案，請於職能基準資訊頁，點選PDF圖示或者ODT圖示下載；若所查詢職能基準為相關部會所訂定相關的專業職能組合或技能檢定規範，則請點選IE圖示連結相關網頁。<br>
+                                2.下載職能基準ODT檔案，請先以個人或單位會員帳號登入並填寫「下載認同調查表」後才能下載。
+                            </td>
+                
+                        </tr>
+                        <tr><td colspan="2">
+                          3.本平台已彙收職能基準共計 <span id="ctl00_ContentPlaceHolderNoMenu_icapCount2" style="color:#E00000;">721</span> 項
+                          (包含<span id="ctl00_ContentPlaceHolderNoMenu_icapHistory" style="color:#E00000;">22</span>項歷史資料)。<br><br>
+                        </td></tr>
+                    </tbody></table>
           </div>
           <div class="card">
-            <h3 class="cardTitle">查詢STEP 1</h3>
-            <form>
-              <div class="form-group">
-                <label>輸入關鍵字</label>
-                  <input type="text" class="form-control" />
-                </label>
-              </div>
-              <div class="form-group">
-                <label>年度</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>發展單位</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>領域類別</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>行業別</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>通俗職業分類</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>職能基準級別</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <h3 class="cardTitle">查詢STEP 2</h3>
-              <div class="form-group">
-                <label>職能基準類型</label>
-                  <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label>是否查詢現行基準版本</label>
-                  <select class="form-select">
-                    <option selected>是</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="btnWrap">
-                <button type="submit" class="btn">開始查詢</button>
-              </div>
-            </form>
+            <table class="table resultList">
+                <thead role="rowgroup">
+                  <tr role="row">
+                    <th role="columnheader">類型</th>
+                    <th role="columnheader">代碼</th>
+                    <th role="columnheader">名稱</th>
+                    <th role="columnheader">發展單位</th>
+                    <th role="columnheader">有效日期</th>
+                    <th role="columnheader">檔案下載</th>
+                  </tr>
+                </thead>
+                <tbody role="rowgroup">
+                  <tr role="row">
+                    <td role="cell">各部會之職能基準</td>
+                    <td role="cell">AVA2172-001v3</td>
+                    <td role="cell">多媒體設計人員</td>
+                    <td role="cell">勞動部</td>
+                    <td role="cell">114.12.31</td>
+                    <td role="cell">
+                        <a href="#">
+                            <i class="fas fa-file-download" style="font-size: 1.2em;"></i>
+                        </a>    
+                    </td>
+                  </tr>
+                  <tr role="row">
+                    <td role="cell">各部會之職能基準</td>
+                    <td role="cell">BAS1499-003v3</td>
+                    <td role="cell">客戶服務主管</td>
+                    <td role="cell">勞動部</td>
+                    <td role="cell">114.12.31</td>
+                    <td role="cell">
+                        <a href="#">
+                            <i class="fas fa-file-download" style="font-size: 1.2em;"></i>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr role="row">
+                    <td role="cell">各部會之職能基準</td>
+                    <td role="cell">BAS2421-003v3</td>
+                    <td role="cell">客戶服務企劃人員</td>
+                    <td role="cell">勞動部</td>
+                    <td role="cell">114.12.31</td>
+                    <td role="cell">
+                        <a href="#">
+                            <i class="fas fa-file-download" style="font-size: 1.2em;"></i>
+                        </a>    
+                    </td>
+                  </tr>
+                  <tr role="row">
+                    <td role="cell">各部會之職能基準</td>
+                    <td role="cell">BAS4222-001v3</td>
+                    <td role="cell">客戶服務人員</td>
+                    <td role="cell">勞動部</td>
+                    <td role="cell">114.12.31</td>
+                    <td role="cell">
+                        <a href="#">
+                            <i class="fas fa-file-download" style="font-size: 1.2em;"></i>
+                        </a>    
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
           </div>
+          <div class="pagination">
+            <ul class="page">
+                <li class="first">
+                    <a title="第一頁" href="#"><i class="fas fa-angle-double-left"></i></a>
+                </li>
+                <li class="prev">
+                    <a title="第一頁" href="#"><i class="fas fa-angle-left"></i></a>
+                </li>
+                <li class="">
+                    <a title="1" href="#">1</a>
+                </li>
+                <li class="active">
+                    <a title="2" href="#">2</a>
+                </li>
+                <li class="">
+                    <a title="3" href="">3</a>
+                </li>
+                <li class="next">
+                    <a title="下一頁" href="#"><i class="fas fa-angle-right"></i></a>
+                </li>
+                <li class="last">
+                    <a title="最後一頁" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                </ul>
+        </div>
         </div>
       </div>
     </main>
@@ -581,7 +583,7 @@
         </footer>
         <script src="script/jquery-3.3.0.min.js"></script>
         <script src="script/main.js"></script>
-        <script src="script/search.js"></script>
+        <script src="script/result.js"></script>
 </body>
 
 </html>
