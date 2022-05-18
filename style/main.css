@@ -647,7 +647,7 @@ ul.topMenu li a:hover {
     color: #fff;
     padding: 10px 30px;
     border-radius: 5px;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 .leftCard .title i {
@@ -672,7 +672,7 @@ ul.topMenu li a:hover {
     padding: 10px;
     display: block;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 500;
     transition: .5s;
 }
 
@@ -846,10 +846,13 @@ footer {
 @media screen and (max-width: 991px) {
     footer {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         padding: 20px 10px;
     }
     .footerIconWrap {
         flex-direction: column;
+        align-items: center;
     }
     .footerLink {
         margin-top: 10px;
