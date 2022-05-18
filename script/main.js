@@ -71,9 +71,9 @@ items.forEach((item) => {
 });
 
 const fontSizeBtns = document.querySelectorAll('.fontSizeBtn');
-fontSizeBtns.forEach(fontSizeBtn=>{
-    fontSizeBtn.addEventListener('click', function(){
-        fontSizeBtns.forEach(fontSizeBtn=>$(fontSizeBtn).removeClass('active'));   
+fontSizeBtns.forEach(fontSizeBtn => {
+    fontSizeBtn.addEventListener('click', function() {
+        fontSizeBtns.forEach(fontSizeBtn => $(fontSizeBtn).removeClass('active'));
         $('body').css('font-size', $(this).data('size'));
         $(this).addClass('active');
     });
