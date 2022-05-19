@@ -3,11 +3,14 @@ table {
     border-collapse: separate;
 }
 
+td {
+    padding: 15px;
+}
+
 td:first-child {
-    height: 45px;
     background: #c2e0e3;
     width: 20%;
-	padding: 0 10px;
+    padding: 5px 10px;
     text-align: center;
 }
 
@@ -17,6 +20,18 @@ td:nth-child(2) {
 }
 
 .icon a {
-	display: block;
-	font-size: 1.5em;
+    display: block;
+    font-size: 1.5em;
+}
+
+@media (max-width: 991px) {
+    td:first-child {
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    td:first-child {
+        width: 35%;
+    }
 }
