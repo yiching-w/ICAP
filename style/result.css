@@ -109,3 +109,11 @@ table.resultList tbody tr:nth-of-type(2n) {
         content: '檔案下載';
     }
 }
+
+@media (max-width: 576px) {
+    table.result tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
