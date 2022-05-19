@@ -4,9 +4,11 @@
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 :root {
     --primary: #38b4c4;
-    --primary-darker: #3b8c97;
+    --primary-darker: #39808a;
+    --primary-lighter: #c2e0e3;
     --secondary: #ec7a3b;
     --gray: #dbdbdb;
+    --light-gray: #f2f2f2;
     --dark: #383838;
     --orange-gradient: linear-gradient(120deg, #cf4342, #EF874E);
 }
@@ -55,7 +57,7 @@ a:focus {
     padding: 2px;
     outline-offset: -2px;
     border-radius: 4px;
-}   
+}
 
 .topHeader {
     display: flex;
@@ -553,7 +555,6 @@ ul.topMenu li a:hover {
     color: var(--primary-darker);
 }
 
-
 @media screen and (min-width: 768px) {
     aside {
         display: none;
@@ -578,6 +579,7 @@ ul.topMenu li a:hover {
     }
     .mobileNav {
         display: flex;
+        z-index: 1000;
     }
     .burger {
         display: flex;
@@ -816,12 +818,43 @@ ul.topMenu li a:hover {
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
+    font-size: inherit;
     transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
     background-color: var(--primary-darker);
     color: #fff;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination .page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination .page li {
+    margin: 2px;
+    flex: 0 0 35px;
+}
+
+.pagination .page li a {
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: 600;
+    display: block;
+    white-space: nowrap;
+    color: var(--dark);
+    background: var(--light-gray);
+}
+
+.pagination .page li.active a {
+    color: #fff !important;
+    background: var(--primary);
 }
 
 footer {
@@ -956,8 +989,8 @@ footer {
     transition: .5s;
     border-radius: 4px;
 }
-    
-.goCenter:focus {   
+
+.goCenter:focus {
     outline: none;
     opacity: 1;
 }

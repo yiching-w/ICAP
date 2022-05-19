@@ -12,12 +12,12 @@ table.result td {
 }
 
 table.result td:first-child {
-    background: #c2e0e3;
+    background: var(--primary-lighter);
     font-weight: 500;
 }
 
 table.result td:nth-child(2) {
-    background: #f2f2f2;
+    background: var(--light-gray);
 }
 
 table.resultList {
@@ -26,7 +26,7 @@ table.resultList {
 
 table.resultList thead tr {
     height: 45px;
-    background-color: #c2e0e3;
+    background-color: var(--primary-lighter);
 }
 
 table.resultList tbody tr {
@@ -35,41 +35,12 @@ table.resultList tbody tr {
 }
 
 table.resultList tbody tr:nth-of-type(2n) {
-    background-color: #f2f2f2;
+    background-color: var(--light-gray);
 }
 
 .fa-file-download {
     font-size: 1.2em;
     color: var(--secondary);
-}
-
-.pagination {
-    text-align: center;
-}
-
-.pagination .page {
-    display: flex;
-    justify-content: center;
-}
-
-.pagination .page li {
-    margin: 2px;
-    flex: 0 0 35px;
-}
-
-.pagination .page li a {
-    border-radius: 10px;
-    padding: 6px;
-    font-weight: 600;
-    display: block;
-    white-space: nowrap;
-    color: var(--dark);
-    background: #f2f2f2;
-}
-
-.pagination .page li.active a {
-    color: #fff !important;
-    background: var(--primary);
 }
 
 @media (max-width: 768px) {
