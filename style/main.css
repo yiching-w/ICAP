@@ -4,7 +4,7 @@
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 :root {
     --primary: #38b4c4;
-    --primary-darker: #2F8F9D;
+    --primary-darker: #2c808d;
     --primary-lighter: #c2e0e3;
     --secondary: #ec7a3b;
     --gray: #dbdbdb;
@@ -425,14 +425,14 @@ ul.topMenu li a:hover {
 .navList ul.menu li a:hover, 
 .navList ul.menu li a:focus { 
     background-color: var(--primary-darker);
-    color: var(--light-gray);
+    color: #fff;
 }
 
 .navList ul.menu li ul.dropdown li:hover a,
 .navList ul.menu li ul.dropdown li:focus a,
 .navList ul.menu li ul.dropdown li:focus-within a {
     background-color: var(--primary-darker);
-    color: var(--light-gray);
+    color: #fff;
 }
 
 
