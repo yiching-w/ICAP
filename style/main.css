@@ -56,7 +56,6 @@ a {
 a:focus,
 a:focus-within {
     outline: 2px solid var(--secondary) !important;
-    /* padding: 2px; */
     outline-offset: -2px;
     border-radius: 4px;
 }
@@ -163,6 +162,10 @@ ul.topMenu li a:hover {
     width: 100%;
 }
 
+.searchWrap {
+    position: relative;
+}
+
 .search {
     position: relative;
     cursor: pointer;
@@ -176,13 +179,12 @@ ul.topMenu li a:hover {
     position: relative;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 40px;
+    text-align: center;
     animation: fab-animation-reverse 0.4s ease-out forwards;
 }
 
-.search .fac {
+.search~.fac {
     width: 100px;
     border-radius: 10px;
     position: absolute;
@@ -202,22 +204,22 @@ ul.topMenu li a:hover {
     display: none;
 }
 
-.search.active .fac {
+.search.active~.fac {
     animation: fac-animation 0.4s ease-out forwards 0.1s;
     top: 45px;
     opacity: 1;
     display: flex;
 }
 
-.search .fac a {
+.search~.fac a {
     margin-bottom: 10px;
 }
 
-.search .fac a:last-child {
+.search~.fac a:last-child {
     margin-bottom: 0;
 }
 
-.search .fac a:hover {
+.search~.fac a:hover {
     color: var(--primary-darker);
 }
 
@@ -971,15 +973,22 @@ footer {
     display: none;
 }
 
-.floatNav:hover {
+.floatNav:hover,
+.floatNav:focus-within {
     width: 130px;
 }
 
-.floatNav:hover .floatNav-items {
+.floatNav a:focus-within {
+    outline: 2px solid white !important;
+}
+
+.floatNav:hover .floatNav-items,
+.floatNav:focus-within .floatNav-items {
     align-items: flex-start;
 }
 
-.floatNav:hover .floatNav-name {
+.floatNav:hover .floatNav-name,
+.floatNav:focus-within .floatNav-name {
     opacity: 1;
     display: flex;
 }
