@@ -4,7 +4,7 @@ table {
 }
 
 td {
-    padding: 15px;
+    padding: 10px;
 }
 
 td:first-child {
@@ -20,7 +20,7 @@ td:nth-child(2) {
 }
 
 .icon a {
-    display: block;
+    margin-right: 5px;
     font-size: 1.5em;
 }
 

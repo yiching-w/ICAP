@@ -1,0 +1,7 @@
+.btnWrap {
+    text-align: right;
+}
+
+.btnWrap a {
+    display: inline-block;
+}

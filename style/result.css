@@ -1,101 +1,101 @@
 .card.result .attention {
-  margin-top: 5px;
-  font-weight: 500;
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 .card.result p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 table.result td {
-  padding: 10px;
+    padding: 10px;
 }
 
 table.result td:first-child {
-  background: var(--primary-lighter);
-  font-weight: 500;
+    background: var(--primary-lighter);
+    font-weight: 500;
 }
 
 table.result td:nth-child(2) {
-  background: var(--light-gray);
+    background: var(--light-gray);
 }
 
 table.resultList {
-  width: 100%;
+    width: 100%;
 }
 
 table.resultList thead tr {
-  height: 45px;
-  background-color: var(--primary-lighter);
+    height: 45px;
+    background-color: var(--primary-lighter);
 }
 
 table.resultList tbody tr {
-  height: 50px;
-  text-align: center;
+    height: 50px;
+    text-align: center;
 }
 
 table.resultList tbody tr:nth-of-type(2n) {
-  background-color: var(--light-gray);
+    background-color: var(--light-gray);
 }
 
 .fa-file-download {
-  font-size: 1.2em;
-  color: var(--secondary);
+    font-size: 1.2em;
+    color: var(--primary-darker);
 }
 
 @media (max-width: 768px) {
-  table.resultList thead {
-    display: none;
-  }
-  table.resultList tbody tr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    line-height: 30px;
-    position: relative;
-    padding: 10px;
-  }
-  table.resultList td::before {
-    margin-right: 10px;
-    color: var(--darker);
-    font-weight: 600;
-  }
-  table.resultList td:nth-of-type(1):before {
-    content: "類型";
-  }
-  table.resultList td:nth-of-type(2):before {
-    content: "代碼";
-  }
-  table.resultList td:nth-of-type(3):before {
-    content: "名稱";
-  }
-  table.resultList td:nth-of-type(4):before {
-    content: "發展單位";
-  }
-  table.resultList td:nth-of-type(5):before {
-    content: "有效期限";
-  }
-  table.resultList td:nth-of-type(6):before {
-    content: "檔案下載";
-  }
+    table.resultList thead {
+        display: none;
+    }
+    table.resultList tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        line-height: 30px;
+        position: relative;
+        padding: 10px;
+    }
+    table.resultList td::before {
+        margin-right: 10px;
+        color: var(--darker);
+        font-weight: 600;
+    }
+    table.resultList td:nth-of-type(1):before {
+        content: "類型";
+    }
+    table.resultList td:nth-of-type(2):before {
+        content: "代碼";
+    }
+    table.resultList td:nth-of-type(3):before {
+        content: "名稱";
+    }
+    table.resultList td:nth-of-type(4):before {
+        content: "發展單位";
+    }
+    table.resultList td:nth-of-type(5):before {
+        content: "有效期限";
+    }
+    table.resultList td:nth-of-type(6):before {
+        content: "檔案下載";
+    }
 }
 
 @media (max-width: 576px) {
-  table.result tbody tr {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
+    table.result tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 }
 
 .back {
-  margin: 5px auto 0;
-  border-bottom: 1px solid;
-  width: fit-content;
-  font-size: 0.8em;
+    margin: 5px auto 0;
+    border-bottom: 1px solid;
+    width: fit-content;
+    font-size: 0.8em;
 }
 
 .back a i {
-  margin-left: 5px;
+    margin-left: 5px;
 }
