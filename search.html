@@ -4,572 +4,134 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover"
+        name="viewport" />
     <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/search.css" />
     <title>ICAP</title>
 </head>
 
 <body>
-    <a href="#content" title="跳到主要內容區塊" tabindex="1" onblur="this.className='goCenter'" class="goCenter">跳到主要內容區塊</a>
-    <aside>
-        <div class="navigation" id="navigation-demo">
-            <div class="closeArea"></div>
-            <div class="leftMenuContent">
-                <ul class="menu">
-                    <li class="menuItem has-collapsible">
-                        <a href="#">
-                            <h3>職能資源專區</h3>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                        <ul class="dropdown">
-                            <li>
-                                <a title="職能基準查詢" href="search.html">
-                                    <h4>職能基準查詢</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能導向課程查詢" href="https://icap.wda.gov.tw/Resources/resources_Class.aspx">
-                                    <h4>職能導向課程查詢</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能單元資源查詢" href="https://icap.wda.gov.tw/Resources/resources_Unit.aspx">
-                                    <h4>職能單元資源查詢</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能單元課程課綱查詢" href="https://icap.wda.gov.tw/Syllabus/Syllabus_List.aspx">
-                                    <h4>職能單元課程課綱查詢</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menuItem has-collapsible">
-                        <a href="#">
-                            <h3>認證專區</h3>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                        <ul class="dropdown">
-                            <li>
-                                <a title="職能基準品質認證" href="https://icap.wda.gov.tw/Quality/quality_1.aspx">
-                                    <h4>職能基準品質認證</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能導向課程品質認證" href="https://icap.wda.gov.tw/Quality/quality_2.aspx">
-                                    <h4>職能導向課程品質認證</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menuItem has-collapsible">
-                        <a href="#">
-                            <h3>輔導資源專區</h3>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                        <ul class="dropdown">
-                            <li>
-                                <a title="職能基準研習" href="https://icap.wda.gov.tw/Counseling/counseling_camp.aspx">
-                                    <h4>職能基準研習</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能導向課程輔導" href="https://icap.wda.gov.tw/Counseling/counseling_cach.aspx">
-                                    <h4>職能導向課程輔導</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="結訓學員資料庫" href="https://icap.wda.gov.tw/Counseling/HumanResource/Human_Resource_Query.aspx">
-                                    <h4>結訓學員資料庫</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menuItem has-collapsible">
-                        <a href="#">
-                            <h3>知識指引專區</h3>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                        <ul class="dropdown">
-                            <li>
-                                <a title="職能基準研習" href="https://icap.wda.gov.tw/Knowledge/knowledge_introduction.aspx">
-                                    <h4>職能基準研習</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="各國國家職能標準簡介" href="https://icap.wda.gov.tw/Knowledge/knowledge_standard.aspx">
-                                    <h4>各國國家職能標準簡介</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能分析方法簡介" href="https://icap.wda.gov.tw/Knowledge/knowledge_method.aspx">
-                                    <h4>職能分析方法簡介</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="指引手冊" href="https://icap.wda.gov.tw/Knowledge/knowledge_application.aspx">
-                                    <h4>指引手冊</h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a title="職能應用工具" href="https://icap.wda.gov.tw/Tool/Tool_List.aspx">
-                                    <h4>職能應用工具</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="leftMenuSub">
-                    <li>
-                        <a href="#" title="回首頁">回首頁</a>
-                    </li>
-                    <li>
-                        <a href="#" title="網站導覽">網站導覽</a>
-                    </li>
-                    <li>
-                        <a href="#" title="隱私權與安全政策">隱私權與安全政策</a>
-                    </li>
-                    <li>
-                        <a href="#" title="FAQ">FAQ</a>
-                    </li>
-                </ul>
+    <div id="navbar"></div>
+    <div class="container">
+        <div id="leftSide"></div>
+        <div class="rightSide">
+            <div class="currentTab">
+                <a accesskey="C" id="content" href="#content" title="主要內容區，此區塊呈現各網頁的網頁內容。">:::</a>
+                <span><a href="#">首頁</a></span>
+                <span><a href="#">職能資源專區</a></span>
+                <span><a href="search.html">職能基準查詢</a></span>
             </div>
-        </div>
-    </aside>
-    <header class="header">
-        <div class="topHeader">
-            <ul class="topMenu">
-                <li>
-                    <a accesskey="U" href="#" title="上方選單連結區，此區塊列有本網站的主要連結">:::</a>
-                </li>
-                <li>
-                    <a href="#" title="回首頁">回首頁</a>
-                </li>
-                <li>
-                    <a href="#" title="網站導覽">網站導覽</a>
-                </li>
-                <li>
-                    <a href="#" title="隱私權與安全政策">隱私權與安全政策</a>
-                </li>
-                <li>
-                    <a href="#" title="FAQ">FAQ</a>
-                </li>
-            </ul>
-        </div>
-        <nav class="mainNavbar">
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="card">
+                <h3 class="cardTitle">基本查詢說明</h3>
+                <p>職能基準是指「為完成特定職業或職類工作，所應具備之能力組合」。</p>
+                <p>職能基準類型包含指由各部會所發展之職能基準，或者各部會所訂定相關的專業職能組合或技能檢定規範。</p>
+                <br />
+                <p>查詢方式：請您先依 Step 1 輸入關鍵字、或加上以「發展單位、行業別、領域別、基準級別」不同條件，再以 Step 2 選擇職能基準類型，進行查詢。</p>
+                <br />
+                <p>舉例說明：您想查詢要從事「綜合零售業門市主管」這個職業，需要做哪些工作、具備哪些職能，及應展現哪些行為？</p>
+                <br />
+                <p>您可以於 Step 1 輸入「門市主管」進行查詢，或者再加上選擇「行業別/批發及零售業」，再於 Step2 選擇全部，進行查詢。</p>
+                <br />
+                <p>
+                    <span>「若您不確定所要查詢的職能項目為何，此提供</span>
+                    <a href="#" style="color: red; text-decoration: underline;">【職能基準一覽表】</a>
+                    <span>，您可以點選下載一覽表進行檢索，找到相近職能項目，再進一步查詢內容。」</span>
+                </p>
             </div>
-            <h1 class="logo">
-                <a href="#"><img src="image/logo.png"></a>
-            </h1>
-            <div class="rightArea">
-                <div class="fontChange">
-                    <span>字型: </span>
-                    <ul>
-                        <li>
-                            <a href="#" class="small fontSizeBtn" data-size="0.8em" title="小">小</a>
-                        </li>
-                        <li>
-                            <a href="#" class="medium fontSizeBtn active" data-size="1em" title="中">中</a>
-                        </li>
-                        <li>
-                            <a href="#" class="large fontSizeBtn" data-size="1.2em" title="大">大</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="searchWrap">
-                    <a class="title search" href="#">
-                        <span class="fab">
-                        <i class="fas fa-search"></i>
-                    </span>
-                    </a>
-                    <div class="fac">
-                        <a href="#">站內搜尋</a>
-                        <a href="#">進階搜尋</a>
+            <div class="card">
+                <h3 class="cardTitle">查詢STEP 1</h3>
+                <form>
+                    <div class="formGroup">
+                        <label>輸入關鍵字</label>
+                        <input type="text" class="formControl" />
                     </div>
-                </div>
-            </div>
-        </nav>
-        <div class="mobileNav">
-            <div class="title">
-                <div class="fab">服務資訊入口</div>
-                <div class="fac">
-                    <a href="https://icap.wda.gov.tw/Resources/resources_Datum.aspx" title="職能基準" target="_blank">職能基準</a>
-                    <a href="https://www.taiwanjobs.gov.tw/home109/index.aspx" title="導向台灣就業通網站" target="_blank">訓練課程</a>
-                    <a href="https://www.wdasec.gov.tw/News_LinkFile.aspx?n=2EE62F1CA39687D9&amp;sms=4C9F24535BA50B1F" title="導向技能檢定中心全球資訊網" target="_blank">能力鑑定規範</a>
-                </div>
-            </div>
-            <div class="title">
-                <div class="fab"><i class="fas fa-arrow-alt-circle-down"></i>本站服務</div>
-                <div class="fac">
-                    <a href="/about.aspx" target="_self" title="關於本計畫">關於本計畫</a>
-                    <a href="/essential.aspx" target="_self" title="推動要點">推動要點</a>
-                    <a href="/newestInformation.aspx" target="_self" title="最新消息">最新消息</a>
-                    <a href="/related.aspx" target="_self" title="相關網站">相關網站</a>
-                    <a href="/faq.aspx" target="_self" title="常見問答">常見問答</a>
-                    <a href="/Knowledge/Knowledge_downLoad.aspx" target="_self">相關文件下載</a>
-                    <a href="/case/case.aspx" target="_self" title="職能應用案例">職能應用案例</a>
-                    <a href="/Newspaper.aspx" target="_self" title="iCAP快遞訂閱">iCAP快遞訂閱</a>
-                    <a href="/CasePaper/CaseExplain.aspx" target="_self" title="徵稿專區">徵稿專區</a>
-                    <a href="/Questionnaire.aspx" target="_self" title="問卷調查">問卷調查</a>
-                </div>
-            </div>
-            <div class="title">
-                <div class="fab"><i class="fas fa-user"></i> 會員登錄</div>
-                <div class="fac">
-                    <a href="/UnitM.aspx" target="_self" title="會員登入">會員登入</a>
-                    <a href="/Policies/privacy.aspx" target="_self" title="加入會員">加入會員</a>
-                    <a href="/Verify/forget.aspx" target="_self" title="忘記密碼">忘記密碼</a>
-                </div>
-            </div>
-        </div>
-        <nav class="navList">
-            <ul class="menu">
-                <li>
-                    <a title="職能資源專區" href="https://icap.wda.gov.tw/resources.aspx">
-                        <h2>職能資源專區</h2>
-                    </a>
-                    <ul class="dropdown">
-                        <li>
-                            <a title="職能基準查詢" href="search.html">
-                                <h3>職能基準查詢</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能導向課程查詢" href="https://icap.wda.gov.tw/Resources/resources_Class.aspx">
-                                <h3>職能導向課程查詢</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能單元資源查詢" href="https://icap.wda.gov.tw/Resources/resources_Unit.aspx">
-                                <h3>職能單元資源查詢</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能單元課程課綱查詢" href="https://icap.wda.gov.tw/Syllabus/Syllabus_List.aspx">
-                                <h3>職能單元課程課綱查詢</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a title="認證專區" href="https://icap.wda.gov.tw/quality.aspx">
-                        <h2>認證專區</h2>
-                    </a>
-                    <ul class="dropdown">
-                        <li>
-                            <a title="職能基準品質認證" href="https://icap.wda.gov.tw/Quality/quality_1.aspx">
-                                <h3>職能基準品質認證</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能導向課程品質認證" href="https://icap.wda.gov.tw/Quality/quality_2.aspx">
-                                <h3>職能導向課程品質認證</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a title="輔導資源專區" href="https://icap.wda.gov.tw/counseling.aspx">
-                        <h2>輔導資源專區</h3>
-                    </a>
-                    <ul class="dropdown">
-                        <li>
-                            <a title="職能基準研習" href="https://icap.wda.gov.tw/Counseling/counseling_camp.aspx">
-                                <h3>職能基準研習</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能導向課程輔導" href="https://icap.wda.gov.tw/Counseling/counseling_cach.aspx">
-                                <h3>職能導向課程輔導</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="結訓學員資料庫" href="https://icap.wda.gov.tw/Counseling/HumanResource/Human_Resource_Query.aspx">
-                                <h3>結訓學員資料庫</h4>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a title="知識指引專區" href="https://icap.wda.gov.tw/knowledge.aspx">
-                        <h2>知識指引專區</h2>
-                    </a>
-                    <ul class="dropdown">
-                        <li>
-                            <a title="職能基準研習" href="https://icap.wda.gov.tw/Knowledge/knowledge_introduction.aspx">
-                                <h3>職能基準研習</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="各國國家職能標準簡介" href="https://icap.wda.gov.tw/Knowledge/knowledge_standard.aspx">
-                                <h3>各國國家職能標準簡介</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能分析方法簡介" href="https://icap.wda.gov.tw/Knowledge/knowledge_method.aspx">
-                                <h3>職能分析方法簡介</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="指引手冊" href="https://icap.wda.gov.tw/Knowledge/knowledge_application.aspx">
-                                <h3>指引手冊</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a title="職能應用工具" href="https://icap.wda.gov.tw/Tool/Tool_List.aspx">
-                                <h3>職能應用工具</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="left">
-                <div class="leftCard">
-                    <div class="title">
-                        <i class="fas fa-circle-down"></i>服務資訊入口
+                    <div class="formGroup">
+                        <label>年度</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="https://icap.wda.gov.tw/Resources/resources_Datum.aspx" title="職能基準" target="_blank">職能基準</a>
-                        </li>
-                        <li>
-                            <a href="https://www.taiwanjobs.gov.tw/home109/index.aspx" title="導向台灣就業通網站" target="_blank">訓練課程</a>
-                        </li>
-                        <li>
-                            <a href="https://www.wdasec.gov.tw/News_LinkFile.aspx?n=2EE62F1CA39687D9&amp;sms=4C9F24535BA50B1F" title="導向技能檢定中心全球資訊網" target="_blank">能力鑑定規範</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="leftCard">
-                    <div class="title">
-                        <i class="fas fa-circle-down"></i>本站服務
+                    <div class="formGroup">
+                        <label>發展單位</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="/about.aspx" target="_self" title="關於本計畫">關於本計畫</a>
-                        </li>
-                        <li>
-                            <a href="/essential.aspx" target="_self" title="推動要點">推動要點</a>
-                        </li>
-                        <li>
-                            <a href="/newestInformation.aspx" target="_self" title="最新消息">最新消息</a>
-                        </li>
-                        <li>
-                            <a href="/related.aspx" target="_self" title="相關網站">相關網站</a>
-                        </li>
-                        <li>
-                            <a href="/faq.aspx" target="_self" title="常見問答">常見問答</a>
-                        </li>
-                        <li>
-                            <a href="/Knowledge/Knowledge_downLoad.aspx" target="_self">相關文件下載</a>
-                        </li>
-                        <li>
-                            <a href="/case/case.aspx" target="_self" title="職能應用案例">職能應用案例</a>
-                        </li>
-                        <li>
-                            <a href="/Newspaper.aspx" target="_self" title="iCAP快遞訂閱">iCAP快遞訂閱</a>
-                        </li>
-                        <li>
-                            <a href="/CasePaper/CaseExplain.aspx" target="_self" title="徵稿專區">徵稿專區</a>
-                        </li>
-                        <li>
-                            <a href="/Questionnaire.aspx" target="_self" title="問卷調查">問卷調查</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="leftCard">
-                    <div class="title">
-                        <i class="fas fa-circle-down"></i>其他資訊平台
+                    <div class="formGroup">
+                        <label>領域類別</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
-                    <a class="otherPlatform" href="https://theme.ndc.gov.tw/manpower/" target="_blank" title="產業人力供需資訊平台">
-                        <img src="image/manpower.jpg" alt="產業人力供需資訊平台" />
-                    </a>
-                    <a class="otherPlatform" href="https://www.ipas.org.tw/" target="_blank" title="經濟部產業人才能力鑑定推動網">
-                        <img src="image/ipas.jpg" alt="經濟部產業人才能力鑑定推動網" />
-                    </a>
-                    <a class="otherPlatform" href="https://www.taiwanjobs.gov.tw/" target="_blank" title="臺灣就業通">
-                        <img src="image/etraining.gif" alt="職訓e網" />
-                    </a>
-                    <a class="otherPlatform" href="https://ttqs.wda.gov.tw" target="_blank" title="TTOS">
-                        <img src="image/ttqs.jpg" alt="TTOS" />
-                    </a>
-                    <a class="otherPlatform" href="https://www.facebook.com/mol.labor" target="_blank" title="勞動部粉絲團">
-                        <img src="image/fb.png" alt="勞動部粉絲團" /></a>
-                </div>
-            </div>
-            <div class="right">
-                <div class="currentTab">
-                    <a accesskey="C" id="content" href="#content" title="主要內容區，此區塊呈現各網頁的網頁內容。">:::</a>
-                    <span><a href="#">首頁</a></span>
-                    <span><a href="#">職能資源專區</a></span>
-                    <span><a href="search.html">職能基準查詢</a></span>
-                </div>
-                <div class="card">
-                    <h3 class="cardTitle">基本查詢說明</h3>
-                    <p>
-                        職能基準是指「為完成特定職業或職類工作，所應具備之能力組合」。<br /> 職能基準類型包含指由各部會所發展之職能基準，或者各部會所訂定相關的專業職能組合或技能檢定規範。
-                    </p>
-                    <br />
-                    <p>查詢方式：請您先依Step 1輸入關鍵字、或加上以「發展單位、行業別、領域別、基準級別」不同條件，再以Step 2 選擇職能基準類型，進行查詢。</p>
-                    <br />
-                    <p>舉例說明：您想查詢要從事「綜合零售業門市主管」這個職業，需要做哪些工作、具備哪些職能，及應展現哪些行為？</p>
-                    <br />
-                    <p>您可以於Step 1輸入「門市主管」進行查詢，或者再加上選擇「行業別/批發及零售業」，再於Step2 選擇全部，進行查詢。</p>
-                    <br />
-                    <p>「若您不確定所要查詢的職能項目為何，此提供<a href="#" style="color: red; text-decoration: underline;">【職能基準一覽表】</a>，您可以點選下載一覽表進行檢索，找到相近職能項目，再進一步查詢內容。」</p>
-                </div>
-                <div class="card">
-                    <h3 class="cardTitle">查詢STEP 1</h3>
-                    <form>
-                        <div class="form-group">
-                            <label>輸入關鍵字</label>
-                            <input type="text" class="form-control" />
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label>年度</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="form-group">
-                            <label>發展單位</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="form-group">
-                            <label>領域類別</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="form-group">
-                            <label>行業別</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="form-group">
-                            <label>通俗職業分類</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="form-group">
-                            <label>職能基準級別</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <h3 class="cardTitle">查詢STEP 2</h3>
-                        <div class="form-group">
-                            <label>職能基準類型</label>
-                            <select class="form-select">
-                    <option selected>全部</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="form-group">
-                            <label>是否查詢現行基準版本</label>
-                            <select class="form-select">
-                    <option selected>是</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                        </div>
-                        <div class="btnWrap">
-                            <a href="result.html" class="btn">開始查詢</a>
-                        </div>
-                    </form>
-                </div>
+                    <div class="formGroup">
+                        <label>行業別</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="formGroup">
+                        <label>通俗職業分類</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="formGroup">
+                        <label>職能基準級別</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <h3 class="cardTitle">查詢STEP 2</h3>
+                    <div class="formGroup">
+                        <label>職能基準類型</label>
+                        <select class="formSelect">
+                            <option selected>全部</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="formGroup">
+                        <label>是否查詢現行基準版本</label>
+                        <select class="formSelect">
+                            <option selected>是</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div style="text-align: right;">
+                        <a href="result.html" class="primaryBtn" style="display: inline-block;">開始查詢</a>
+                    </div>
+                </form>
             </div>
         </div>
-    </main>
-    <footer>
-        <div class="floatNav" id="navbar">
-            <div class="floatNav-container">
-                <div class="floatNav-items">
-                    <a href="#" class="floatNav-item">
-                        <i class="fas fa-user"></i>
-                        <span class="floatNav-name">會員專區</span>
-                    </a>
-                    <a href="#" class="floatNav-item">
-                        <i class="fas fa-toolbox"></i>
-                        <span class="floatNav-name">職能應用工具</span>
-                    </a>
-                    <a class="floatNav-item scrollTop" href="#">
-                        <i class="fas fa-chevron-up"></i>
-                        <span class="floatNav-name">回到頁首</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <a accesskey="Z" href="#z" id="z" title="下方選單連結區，此區塊列有主辦單位與承辦單位相關訊息">:::</a>
-            <div>維運單位：「職能基準發展與應用推動計畫」專案辦公室</div>
-            <div>聯絡電話：02-2701-6565 分機334</div>
-            <div>
-                服務時間：週一至週五　上午8時30分至12時30分，下午1時30分至5時30分
-            </div>
-            <div class="footerIconWrap">
-                <div class="footerIcon">
-                    <img src="image/7.png" />版權所有：勞動部勞動力發展署
-                </div>
-                <div class="footerIcon">
-                    <img src="image/7.png" />主辦單位：勞動部勞動力發展署
-                </div>
-            </div>
-            <div>「建議使用IE11.0 以上或Edge、Firefox、Chrome 瀏覽器，最佳瀏覽解析度為1024*768」</div>
-        </div>
-        <div class="footerLink">
-            <a href="#">
-                <img src="image/gov_03.png" alt="E政府" />
-            </a>
-            <a href="#">
-                <img src="image/aa.jpg" width="90px" alt="無障礙標章" />
-            </a>
-            <a href="#">
-                <img src="image/line.png" width="90px" alt="line@" />
-            </a>
-        </div>
-    </footer>
+    </div>
+    <div id="footer"></div>
     <script src="script/jquery-3.3.0.min.js"></script>
     <script src="script/main.js"></script>
-    <script src="script/search.js"></script>
 </body>
 
 </html>
