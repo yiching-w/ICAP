@@ -1,0 +1,312 @@
+.toolName {
+    font-weight: 600;
+    font-size: 1.2em;
+    width: fit-content;
+    background-color: #125B50;
+    padding: 10px 15px;
+    margin: 0 auto 15px;
+    border-radius: 50px;
+    color: #FAF5E4;
+    border: 4px #F8B400 solid;
+    box-shadow: 2px 2px 2px #0004;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolName i {
+    font-size: 0.6rem;
+    margin: 0px 8px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAF5E4;
+    overflow: hidden;
+    flex: 30%;
+    border: 4px solid #4d194d;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 1px 2px 3px #0002;
+}
+
+.item .role {
+    background-color: #125B50;
+    color: #FAF5E4;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 45px;
+}
+
+.item .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.item .list a {
+    background-color: #F8B400;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: 1px 2px 3px #0002;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transform: scale(0.9);
+    transition: .3s ease-in-out;
+}
+
+.item .list a:not(.unabled):hover,
+.item .list a:not(.unabled):focus {
+    transform: scale(1);
+}
+
+.item .list a.show {
+    background-color: #125b50;
+    color: #faf5e4;
+}
+
+.item .list div.disabled {
+    background-color: var(--gray);
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: 1px 2px 3px #0002;
+}
+
+@media (max-width: 991px) {
+    .item {
+        flex: 45%;
+    }
+}
+
+.stepCard {
+    background: #faf5e4;
+    border: 4px solid;
+    border-radius: 20px;
+    width: 98%;
+    margin: 0 auto;
+    position: relative;
+    opacity: 0;
+    clear: both;
+    height: 0;
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+
+.stepCard.show {
+    height: 250px;
+    opacity: 1;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.stepCard#personalTest.show {
+    height: 400px;
+}
+
+.stepCard .title {
+    font-size: 1.2em;
+    border-bottom: 3px solid #125B50;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    color: #125B50;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    position: relative;
+    width: 30%;
+    background: #125b50;
+    color: #faf5e4;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.step::before {
+    content: attr(data-no);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f8b400;
+    box-shadow: 1px 2px 3px #0003;
+    top: -10px;
+    left: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #125b50;
+}
+
+.arrowBack {
+    width: 0px;
+    height: 0px;
+    border-width: 21px;
+    border-style: solid;
+    border-color: transparent transparent #125b50 transparent;
+    position: absolute;
+    top: -42px;
+    left: 187px;
+}
+
+.arrowFront {
+    width: 0px;
+    height: 0px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #faf5e4 transparent;
+    position: absolute;
+    top: -29px;
+    left: 193px;
+}
+
+.stepCard#personalTest .arrowFront,
+.stepCard#personalDev .arrowFront{
+    left: 414px;
+}
+
+.stepCard#personalTest .arrowBack,
+.stepCard#personalDev .arrowBack{
+    left: 408px;
+}
+
+.btnWrap {
+    text-align: right;
+}
+
+.stepCardBtn {
+    text-align: center;
+    margin: 0 auto;
+    background: #125b50;
+    color: #faf5e4;
+    border: 4px solid #f8b400;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 4px 5px rgb(0 0 0 / 23%);
+}
+
+.stepCardBtn:hover {
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .stepCard.show {
+        height: 280px;
+    }
+
+    .arrowBack {
+        left: 143px;
+    }
+
+    .arrowFront{
+        left: 149px;
+    }
+
+    .stepCard#personalTest .arrowFront,
+    .stepCard#personalDev .arrowFront {
+        left: 324px;
+    }
+
+    .stepCard#personalTest .arrowBack,
+    .stepCard#personalDev .arrowBack {
+        left: 318px;
+    }
+}
+
+@media (max-width: 991px) {
+    .item.agency {
+        order: 7;
+    }
+
+    .arrowBack {
+        left: 143px;
+    }
+
+    .arrowFront{
+        left: 149px;
+    }
+
+    .step {
+        padding: 10px;
+    }
+
+    .stepCard.show {
+        height: 315px;
+    }
+
+    .stepCard#personalTest.show {
+        height: 437px;
+    }
+
+    .stepCard#personalTest .arrowFront,
+    .stepCard#personalDev .arrowFront {
+        left: 324px;
+    }
+
+    .stepCard#personalTest .arrowBack,
+    .stepCard#personalDev .arrowBack {
+        left: 318px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stepCard.show {
+        height: 360px;
+    }
+
+    .stepCard#personalTest.show {
+        height: 550px;
+    }
+
+    .arrowBack {
+        left: 66px;
+    }
+
+    .arrowFront{
+        left: 72px;
+    }
+
+    .stepCard#personalTest .arrowFront, .stepCard#personalDev .arrowFront {
+        left: 242px;
+    }
+
+    .stepCard#personalTest .arrowBack, .stepCard#personalDev .arrowBack {
+        left: 236px;
+    }
+}

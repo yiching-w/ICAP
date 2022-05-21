@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover"
+        name="viewport" />
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/tool.css" />
+    <title>ICAP</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <div id="leftSide"></div>
+        <div class="rightSide">
+            <div class="currentTab">
+                <a accesskey="C" id="content" href="#content" title="主要內容區，此區塊呈現各網頁的網頁內容。">:::</a>
+                <span><a href="#">首頁</a></span>
+                <span><a href="#">職能應用工具</a></span>
+            </div>
+            <div class="toolName">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <span>職能應用工具</span>
+                <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </div>
+            <div class="intro">
+                <div>職能模型工具：使用「單位會員」登入。</div>
+                <div>其他工具：使用「個人會員」登入。</div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="role">所有</div>
+                    <div class="list">
+                        <a href="#">職能模型工具</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="role">個人</div>
+                    <div class="list hasStep">
+                        <a href="#" data-target="personalTest">個人職能檢測</a>
+                        <a href="#" data-target="personalDev">個人發展計畫</a>
+                    </div>
+                </div>
+                <div class="item agency">
+                    <div class="role">就服機構</div>
+                    <div class="list">
+                        <div class="disabled">系統改版中</div>
+                    </div>
+                </div>
+                <div class="stepCard" id="personalTest">
+                    <span class="arrowBack"></span>
+                    <span class="arrowFront"></span>
+                    <div class="title">個人職能檢測 檢測說明</div>
+                    <p>將幫助您檢視對於感興趣職業的勝任程度，讓您瞭解需加強的知識與技能，以找到相關的訓練課程或者適合的工作。</p>
+                    <div class="steps">
+                        <div class="step" data-no="1">輸入感興趣工作<span style="color: #FF6363;">關鍵字</span></div>
+                        <div class="step" data-no="2">選擇職業</div>
+                        <div class="step" data-no="3">進行檢測</div>
+                    </div>
+                    <div style="font-weight: 600; margin-bottom: 10px;">您將依序進行檢測，檢結結果將勝任程度分為：</div>
+                    <p style="margin-bottom: 5px;">1.完全勝任：可以完成這項工作內容，而且做的很好</p>
+                    <p style="margin-bottom: 5px;">2.部分勝任：需要透過學習或協助才能完成這項工作內容</p>
+                    <p style="margin-bottom: 5px;">3.無法勝任：以目前能力，無法完成這項工作內容</p>
+                    <div class="btnWrap">
+                        <button class="stepCardBtn">開始</button>
+                        <button class="stepCardBtn">加入會員</button>
+                    </div>
+                </div>
+                <div class="stepCard" id="personalDev">
+                    <span class="arrowBack"></span>
+                    <span class="arrowFront"></span>
+                    <div class="title">個人發展計畫 檢測說明</div>
+                    <p>將幫助您瞭解能從事哪些職業，以作為未來職涯發展之參考方向。</p>
+                    <div class="steps">
+                        <div class="step" data-no="1">輸入專長技能<span style="color: #FF6363;">關鍵字</span></div>
+                        <div class="step" data-no="2">選擇職業(至多5項)</div>
+                        <div class="step" data-no="3">進行檢測</div>
+                    </div>
+                    <div class="btnWrap">
+                        <button class="stepCardBtn">開始</button>
+                        <button class="stepCardBtn">加入會員</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="role">企業</div>
+                    <div class="list hasStep">
+                        <a href="#" data-target="seekTalent">求才條件設定</a>
+                        <a href="#" data-target="workStatement">工作說明書</a>
+                        <a href="#" data-target="staffAbility">員工能力考核</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="role">訓練機構</div>
+                    <div class="list">
+                        <div class="disabled">系統改版中</div>
+                    </div>
+                </div>
+                <div class="stepCard" id="seekTalent">
+                    <span class="arrowBack"></span>
+                    <span class="arrowFront"></span>
+                    <div class="title">求才條件設定 使用說明</div>
+                    <p>將協助您查詢特定職務之工作內容與應備知識技能，以作為企業設定求才條件之參考。</p>
+                    <div class="steps">
+                        <div class="step" data-no="1">輸入職業或工作任務<span style="color: #FF6363;">關鍵字</span></div>
+                        <div class="step" data-no="2">選擇職業</div>
+                        <div class="step" data-no="3">顯示結果</div>
+                    </div>
+                    <div class="btnWrap">
+                        <button class="stepCardBtn">開始</button>
+                        <button class="stepCardBtn">加入會員</button>
+                    </div>
+                </div>
+                <div class="stepCard" id="workStatement">
+                    <span class="arrowBack"></span>
+                    <span class="arrowFront"></span>
+                    <div class="title">工作說明書 使用說明</div>
+                    <p>將協助您查詢特定職務工作內容與要求條件，以作為企業發展工作說明書之參考。</p>
+                    <div class="steps">
+                        <div class="step" data-no="1">輸入職業或工作任務<span style="color: #FF6363;">關鍵字</span></div>
+                        <div class="step" data-no="2">選擇職業</div>
+                        <div class="step" data-no="3">顯示結果</div>
+                    </div>
+                    <div class="btnWrap">
+                        <button class="stepCardBtn">開始</button>
+                        <button class="stepCardBtn">加入會員</button>
+                    </div>
+                </div>
+                <div class="stepCard" id="staffAbility">
+                    <span class="arrowBack"></span>
+                    <span class="arrowFront"></span>
+                    <div class="title">員工能力考核 使用說明</div>
+                    <p>將協助您查詢特定職務之工作內容與應備知識技能，以作為企業規劃員工能力考核條件之參考。</p>
+                    <div class="steps">
+                        <div class="step" data-no="1">輸入職業或工作任務<span style="color: #FF6363;">關鍵字</span></div>
+                        <div class="step" data-no="2">選擇職業</div>
+                        <div class="step" data-no="3">顯示結果</div>
+                    </div>
+                    <div class="btnWrap">
+                        <button class="stepCardBtn">開始</button>
+                        <button class="stepCardBtn">加入會員</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="script/jquery-3.3.0.min.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/tool.js"></script>
+</body>
+
+</html>
