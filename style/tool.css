@@ -35,7 +35,7 @@
     background-color: #FAF5E4;
     overflow: hidden;
     flex: 30%;
-    border: 4px solid #4d194d;
+    border: 4px solid #125b50;
     border-radius: 20px;
     margin: 5px;
     box-shadow: 1px 2px 3px #0002;
@@ -97,7 +97,7 @@
 
 .stepCard {
     background: #faf5e4;
-    border: 4px solid;
+    border: 4px solid #125b50;
     border-radius: 20px;
     width: 98%;
     margin: 0 auto;
@@ -110,6 +110,9 @@
     -o-transition: all .3s ease .15s;
     -ms-transition: all .3s ease .15s;
     transition: all .3s ease .15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .stepCard.show {
@@ -206,22 +209,23 @@
 }
 
 .stepCardBtn {
-    text-align: center;
-    margin: 0 auto;
-    background: #125b50;
+    background-color: #125b50;
     color: #faf5e4;
     border: 4px solid #f8b400;
-    padding: 5px 20px;
-    font-size: 1.2em;
+    padding: 4px 14px;
+    font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
-    transform: scale(0.9);
     transition: 0.3s ease-in-out;
     box-shadow: 3px 4px 5px rgb(0 0 0 / 23%);
 }
 
+.stepCardBtn:first-child {
+    margin-right: 8px;
+}
+
 .stepCardBtn:hover {
-    transform: scale(1);
+    transform: scale(0.95);
     border-radius: 10px;
 }
 
@@ -263,7 +267,7 @@
     }
 
     .step {
-        padding: 10px;
+        padding: 8px 15px;
     }
 
     .stepCard.show {
@@ -286,8 +290,19 @@
 }
 
 @media (max-width: 576px) {
+    .item .role {
+        font-size: 1.2em;
+        height: 40px;
+    }
+
+    .item {
+        margin: 3px;
+    }
+
     .stepCard.show {
         height: 360px;
+        margin: 15px auto;
+        padding: 14px;
     }
 
     .stepCard#personalTest.show {
