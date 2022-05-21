@@ -204,6 +204,10 @@
     left: 408px;
 }
 
+.stepCard#personalTest p {
+    margin-bottom: 5px;
+}
+
 .btnWrap {
     text-align: right;
 }
@@ -323,5 +327,9 @@
 
     .stepCard#personalTest .arrowBack, .stepCard#personalDev .arrowBack {
         left: 236px;
+    }
+
+    .stepCard#personalTest p {
+        margin-bottom: 2px;
     }
 }
