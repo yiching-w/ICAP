@@ -1,12 +1,3 @@
-// $('.item .hasStep a').click(function(e){
-//   e.preventDefault();
-
-//   $(this).addClass('show');
-//   let id = $(this).data('target');
-//   $('.stepCard#' + id).addClass('show');
-// });
-
-
 const steps = document.querySelectorAll('.item .hasStep a');
 steps.forEach((step) => {
   step.addEventListener('click', function (e) {

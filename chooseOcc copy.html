@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover"
+        name="viewport" />
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/chooseOcc.css" />
+    <title>ICAP</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <div id="leftSide"></div>
+        <div class="rightSide">
+            <div class="currentTab">
+                <a accesskey="C" id="content" href="#content" title="主要內容區，此區塊呈現各網頁的網頁內容。">:::</a>
+                <span><a href="#">首頁</a></span>
+                <span><a href="#">職能應用工具</a></span>
+                <span><a href="#">個人職能檢測</a></span>
+            </div>
+            <div class="card">
+                <div class="cardTitle">個人職能檢測</div>
+                <div class="progressbarWrap">
+                    <ul class="progressbar">
+                        <li>使用說明</li>
+                        <li class="active">自我檢測</li>
+                        <li>檢測結果</li>
+                    </ul>
+                </div>
+                <table class="result">
+                    <tbody>
+                        <tr>
+                            <td>目前搜尋條件</td>
+                            <td>
+                                <span class="keyword">零售</span>
+                                <span>共計</span>
+                                <span class="count">26</span>
+                                <span>筆</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>查詢結果如列表；請點選工作，進行勝任程度評估。</p>
+                <p><span class="attention">請留意：</span>如果想進一步瞭解各項職業的工作內容，您可以點選查詢列表之各個職能基準名稱，預覽該職能基準之PDF檔案，或者連結至該職業網頁查詢。
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="cardTitle">查詢結果列表</h3>
+                <table class="resultList">
+                    <thead>
+                        <tr>
+                            <th>單選</th>
+                            <th>職業名稱</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">綜合零售業門市主管</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">綜合零售業區域主管</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">商品展示陳列人員</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">零售經理</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">門市零售管理人員</a></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">綜合零售業商品採購人員</a></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="RowSelected" type="radio" />
+                            </td>
+                            <td><a href="#">批發業務人員</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <ul class="page">
+                    <li class="first">
+                        <a title="前往第一頁" href="#"><i class="fas fa-angle-double-left" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="prev">
+                        <a title="前往上一頁" href="#"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="">
+                        <a title="1" href="#">1</a>
+                    </li>
+                    <li class="active">
+                        <a title="2" href="#">2</a>
+                    </li>
+                    <li class="">
+                        <a title="3" href="">3</a>
+                    </li>
+                    <li class="next">
+                        <a title="前往下一頁" href="#"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="last">
+                        <a title="前往最後一頁" href="#"><i class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="script/jquery-3.3.0.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

@@ -266,32 +266,39 @@
 
     .item {
         margin: 3px;
+        flex: 100%;
+    }
+
+    .item.training {
+        order: 8;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin: 10px 0;
     }
 
     .stepCard.show {
-        height: 360px;
+        height: 370px;
         margin: 15px auto;
         padding: 14px;
     }
 
     .stepCard#personalTest.show {
-        height: 550px;
+        height: 650px;
     }
 
     .arrowBack {
-        left: 66px;
+        left: 170px;
     }
 
-    .arrowFront{
-        left: 72px;
-    }
-
-    .stepCard#personalTest .arrowFront, .stepCard#personalDev .arrowFront {
-        left: 242px;
-    }
-
-    .stepCard#personalTest .arrowBack, .stepCard#personalDev .arrowBack {
-        left: 236px;
+    .stepCard#personalTest .arrowBack,
+    .stepCard#personalDev .arrowBack {
+        left: 170px;
     }
 
     .stepCard#personalTest p {

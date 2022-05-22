@@ -1,0 +1,61 @@
+table.result td {
+    padding: 10px;
+}
+
+table.result td:first-child {
+    background: var(--primary-lighter);
+    font-weight: 500;
+}
+
+table.result td:nth-child(2) {
+    background: var(--light-gray);
+}
+
+table.resultList {
+    width: 100%;
+}
+
+table.resultList a {
+    text-decoration: underline;
+}
+
+table.resultList a:hover {
+    color: var(--primary-darker);
+}
+
+table.resultList thead tr {
+    height: 30px;
+    background-color: var(--primary-lighter);
+}
+
+table.resultList tbody tr {
+    height: 30px;
+    text-align: center;
+}
+
+table.resultList tbody tr:nth-of-type(2n) {
+    background-color: var(--light-gray);
+}
+
+table.resultList td:nth-of-type(1) {
+    width: 15%;
+}
+
+@media (max-width: 576px) {
+    table.result tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+.keyword,
+.count {
+    margin: 0 5px;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.card p {
+    margin: 8px 0;
+}
