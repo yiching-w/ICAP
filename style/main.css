@@ -648,19 +648,6 @@ ul.topMenu li a:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* main content */
 .leftSide {
     flex: none;
@@ -834,6 +821,27 @@ ul.topMenu li a:hover {
 .primaryBtn:hover {
     background-color: var(--primary-darker);
     color: #fff;
+}
+
+table.leftThead td {
+    padding: 10px;
+}
+
+table.leftThead td:first-child {
+    background: var(--primary-lighter);
+    font-weight: 500;
+}
+
+table.leftThead td:nth-child(2) {
+    background: var(--light-gray);
+}
+
+@media (max-width: 576px) {
+    table.leftThead tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 }
 
 .pagination {

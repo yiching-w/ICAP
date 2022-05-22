@@ -11,7 +11,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/chooseOcc.css" />
+    <link rel="stylesheet" href="style/assessment.css" />
     <title>ICAP</title>
 </head>
 
@@ -35,76 +35,82 @@
                         <li>檢測結果</li>
                     </ul>
                 </div>
-                <table class="result">
+                <p>以下是《<span style="color: #E00000;">零售經理</span>》包含的主要工作內容，</p>
+                <p>請您依自己目前能力，針對「工作上必須要完成的內容」，進行勝任程度評量。</p>
+                <p class="attention">勝任程度分為:</p>
+                <table class="leftThead">
                     <tbody>
                         <tr>
-                            <td>目前搜尋條件</td>
-                            <td>
-                                <span class="keyword">零售</span>
-                                <span>共計</span>
-                                <span class="count">26</span>
-                                <span>筆</span>
-                            </td>
+                            <td>完全勝任</td>
+                            <td>可以完成這項工作內容，而且做的很好</td>
+                        </tr>
+                        <tr>
+                            <td>部分勝任</td>
+                            <td>需要透過學習或協助才能完成這項工作內容</td>
+                        </tr>
+                        <tr>
+                            <td>無法勝任</td>
+                            <td>以目前能力，無法完成這項工作內容</td>
                         </tr>
                     </tbody>
                 </table>
-                <p>查詢結果如列表；請點選工作，進行勝任程度評估。</p>
-                <p><span class="attention">請留意：</span>如果想進一步瞭解各項職業的工作內容，您可以點選查詢列表之各個職能基準名稱，預覽該職能基準之PDF檔案，或者連結至該職業網頁查詢。
-                </p>
             </div>
             <div class="card">
-                <h3 class="cardTitle">查詢結果列表</h3>
+                <h3 class="cardTitle">主要工作內容</h3>
                 <table class="resultList">
                     <thead>
                         <tr>
-                            <th>單選</th>
-                            <th>職業名稱</th>
+                            <th rowspan="2">主要工作內容</th>
+                            <th colspan="3">我的勝任程度</th>
+                        </tr>
+                        <tr class="qualified">
+                            <th>完全勝任</th>
+                            <th>部分勝任</th>
+                            <th>無法勝任</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>預估營運成本</td>
                             <td>
-                                <input name="RowSelected" type="radio" />
+                                <input name="r1" type="radio" />
                             </td>
-                            <td><a href="#">綜合零售業門市主管</a></td>
+                            <td>
+                                <input name="r1" type="radio" />
+                            </td>
+                            <td>
+                                <input name="r1" type="radio" />
+                            </td>
+                        </tr>
+                        <tr class="info">
+                            <td colspan="4">
+                                <div>● 提出具有效力的成本與效益估算佐證</div>
+                                <div>● 根據公司政策與程序，有效降低成本</div>
+                                <div>● 評估並解讀成本資訊與資源配置</div>
+                                <div>● 鼓勵團隊成員在其職掌領域內積極控制成本</div>
+                            </td>
                         </tr>
                         <tr>
+                            <td>制定預算</td>
                             <td>
-                                <input name="RowSelected" type="radio" />
+                                <input name="r2" type="radio" />
                             </td>
-                            <td><a href="#">綜合零售業區域主管</a></td>
-                        </tr>
-                        <tr>
                             <td>
-                                <input name="RowSelected" type="radio" />
+                                <input name="r2" type="radio" />
                             </td>
-                            <td><a href="#">商品展示陳列人員</a></td>
-                        </tr>
-                        <tr>
                             <td>
-                                <input name="RowSelected" type="radio" />
+                                <input name="r2" type="radio" />
                             </td>
-                            <td><a href="#">零售經理</a></td>
                         </tr>
-                        <tr>
-                            <td>
-                                <input name="RowSelected" type="radio" />
+                        <tr class="info">
+                            <td colspan="4">
+                                <div>● 分析業績的毛利與虧損並與預算比較</div>
+                                <div>● 如發生預算低估或超支，及時採取修正行動</div>
+                                <div>● 提前對核准之預算分配的修正需求，與相關人員進行協商</div>
+                                <div>● 根據業務政策，定期比較預算目標及實際收入與支出</div>
+                                <div>● 根據預算目標，控管並分析淨利數據及報告</div>
+                                <div>● 遵守企業內有關預算或目標金額的政策與程序，控管並維持政策與目標</div>
                             </td>
-                            <td><a href="#">門市零售管理人員</a></td>
-                        </tr>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="RowSelected" type="radio" />
-                            </td>
-                            <td><a href="#">綜合零售業商品採購人員</a></td>
-                        </tr>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="RowSelected" type="radio" />
-                            </td>
-                            <td><a href="#">批發業務人員</a></td>
                         </tr>
                     </tbody>
                 </table>

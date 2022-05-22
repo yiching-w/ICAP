@@ -1,3 +1,7 @@
+.qualified th {
+    width: 11%;
+}
+
 table.resultList {
     width: 100%;
 }
@@ -15,17 +19,35 @@ table.resultList thead tr {
     background-color: var(--primary-lighter);
 }
 
-table.resultList tbody tr {
-    height: 30px;
+table.resultList tbody td {
+    padding: 5px;
     text-align: center;
+}
+
+table.resultList tbody td:first-child {
+    text-align: left;
+}
+
+table.resultList tbody tr.info td {
+    text-align: left;
+    font-size: 0.9em;
 }
 
 table.resultList tbody tr:nth-of-type(2n) {
     background-color: var(--light-gray);
 }
 
-table.resultList td:nth-of-type(1) {
-    width: 15%;
+
+table.resultList tbody tr:nth-of-type(2n) {
+    background-color: var(--light-gray);
+}
+
+@media (max-width: 576px) {
+    table.result tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 }
 
 .keyword,
