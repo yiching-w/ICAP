@@ -1,0 +1,32 @@
+.btnWrap {
+    text-align: right;
+    margin: 5px 0;
+}
+
+.primaryBtn {
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 5px;
+}
+
+table td:first-child {
+    background: var(--primary-lighter);
+    font-weight: 500;
+    width: 20%;
+}
+
+table td.head {
+    background-color: var(--primary-darker);
+    color: #ffffff;
+}
+
+table td:nth-child(2) {
+    background: var(--light-gray);
+}

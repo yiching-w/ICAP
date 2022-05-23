@@ -2,6 +2,11 @@
     width: 11%;
 }
 
+.question span {
+    margin: 0 2px;
+    color: var(--red);
+}
+
 table.resultList {
     width: 100%;
 }
