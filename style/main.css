@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
-
 :root {
     --primary: #38b4c4;
     --primary-darker: #2c808d;
@@ -83,7 +82,9 @@ a:focus-within {
     opacity: 1;
 }
 
+
 /* navbar */
+
 .backdrop {
     position: fixed;
     left: 0;
@@ -375,7 +376,7 @@ ul.topMenu li a:hover {
 }
 
 .mobileMainNavbar .title {
-    cursor: pointer;    
+    cursor: pointer;
     margin: 0 7px;
 }
 
@@ -433,7 +434,6 @@ ul.topMenu li a:hover {
 .mobileMainNavbar .title .fac a:hover {
     color: var(--primary-darker);
 }
-
 
 @keyframes fab-animation {
     0% {
@@ -648,7 +648,9 @@ ul.topMenu li a:hover {
     }
 }
 
+
 /* main content */
+
 .leftSide {
     flex: none;
     flex-basis: 220px;
@@ -874,7 +876,9 @@ table.leftThead td:nth-child(2) {
     background: var(--primary);
 }
 
+
 /* footer */
+
 footer {
     background-color: var(--primary);
     font-size: 0.85em;
@@ -1016,7 +1020,7 @@ footer {
     border-radius: 50%;
     background-color: #fff;
 }
-  
+
 .progressbarWrap .progressbar li:after {
     content: '';
     position: absolute;
@@ -1027,13 +1031,12 @@ footer {
     left: -50%;
     z-index: -1;
 }
-  
+
 .progressbarWrap .progressbar li:first-child:after {
     content: none;
 }
-  
+
 .progressbarWrap .progressbar li.active:before {
     background-color: var(--primary-darker);
     color: #fff;
-    content: "✔";  
 }
