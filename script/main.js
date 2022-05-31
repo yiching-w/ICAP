@@ -89,4 +89,8 @@ $('#footer').load('footer.html', function (data) {
       }, 800);
     return false;
   });
+
+  $('.memberZone').click(function(){
+    $(this).toggleClass('active');
+  })
 }); // load footer.html
