@@ -5,7 +5,7 @@
 :root {
     --primary: #38b4c4;
     --primary-darker: #2c808d;
-    --primary-lighter: #    ;
+    --primary-lighter: #c8dce4;
     --secondary: #ec7a3b;
     --gray: #dbdbdb;
     --light-gray: #f2f2f2;
@@ -717,9 +717,12 @@ ul.topMenu li a:hover {
     width: 100%;
 }
 
-.currentTab {
+.topContent {
     font-size: 0.9em;
     margin: 6px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .currentTab a:hover {
@@ -738,9 +741,29 @@ ul.topMenu li a:hover {
     content: '';
 }
 
+.signOut {
+    display: inline-block;
+    background-color: #d73e29;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-left: 7px;
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+.signOut i {
+    margin-left: 3px;
+}
+
+.signOut:hover {
+    transform: scale(1);
+}
+
 @media (max-width: 768px) {
-    .currentTab {
-        text-align: center;
+    .topContent {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
