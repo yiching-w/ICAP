@@ -656,6 +656,10 @@ ul.topMenu li a:hover {
 
 
 /* main content */
+.mainContent {
+    width: 100%;
+}
+
 .topContent {
     display: flex;
     flex-direction: column;
