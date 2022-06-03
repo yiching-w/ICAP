@@ -1,7 +1,15 @@
 $('#navbar').load('navbar.html', function (data) {
   $('#navbar').replaceWith(data);
-  $('.search').click(function(){
+
+  const $search = $('.search');
+  $search.click(function(){
     $(this).toggleClass('active');
+  });
+
+  $search.keydown(function(event) {
+    if(event.key === 'Tab') {
+      $(this).toggleClass('active');
+    }
   });
 
   const mobileMainNavbars = document.querySelectorAll('.mobileMainNavbar .title');
@@ -75,10 +83,6 @@ $('#navbar').load('navbar.html', function (data) {
   });
 }); // load navbar.html
 
-$('#leftSide').load('leftSide.html', function(data){
-  $('#leftSide').replaceWith(data);
-}); // load leftSide.html
-
 $('#footer').load('footer.html', function (data) {
   $('#footer').replaceWith(data);
   const scrollTop = $('.scrollTop');
@@ -90,7 +94,33 @@ $('#footer').load('footer.html', function (data) {
     return false;
   });
 
-  $('.memberZone').click(function(){
-    $(this).toggleClass('active');
+  const $dropdownToggle = $('.dropdownToggle');
+  $dropdownToggle.click(function() {
+    toggle(this);
   })
+
+  $dropdownToggle.keydown(function(event) {
+    if(event.key === 'Tab') {
+      toggle(this);
+    }
+  });
+  
 }); // load footer.html
+
+
+function toggle(el) {
+  var isActive = false;
+  if(el.parentNode.classList.contains('active')) {
+    isActive = true;
+  }
+  var dropdownWrap = document.getElementsByClassName("dropdownWrap");
+  for (var d = 0; d < dropdownWrap.length; d++) {
+    var openDropdown = dropdownWrap[d];
+    if (openDropdown.classList.contains('active')) {
+      openDropdown.classList.toggle('active');
+    }
+  }
+  if(!isActive) {
+    el.parentNode.classList.toggle('active');    
+  }
+}
