@@ -524,7 +524,19 @@ ul.topMenu li a:hover {
     ul.topMenu,
     .mainNavbar,
     .navList ul.menu {
-        max-width: 1140px;
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container,
+    ul.topMenu,
+    .mainNavbar,
+    .navList ul.menu {
+        max-width: 70%;
+    }
+    body {
+        font-size: 1.2em;
     }
 }
 
@@ -534,7 +546,9 @@ ul.topMenu li a:hover {
     }
 }
 
+
 /* main content */
+
 .mainContent {
     width: 100%;
 }
@@ -891,7 +905,7 @@ footer {
 
 .floatNav .dropdown li a:focus-within {
     color: rgb(0, 0, 0) !important;
-} 
+}
 
 .floatNav .dropdown li:hover {
     background-color: #f2f2f2;
