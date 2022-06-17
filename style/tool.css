@@ -21,7 +21,7 @@
 
 .item .role {
     background-color: var(--primary-darker);
-    color: #FAF5E4;
+    color: #FFF;
     font-size: 1.5em;
     font-weight: 700;
     display: flex;
@@ -161,7 +161,7 @@
 }
 
 .stepCard#personalTest .arrowBack,
-.stepCard#personalDev .arrowBack{
+.stepCard#personalDev .arrowBack {
     left: 408px;
 }
 
@@ -183,7 +183,7 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 4px 5px rgb(0 0 0 / 23%);
-}   
+}
 
 .stepCardBtn:first-child {
     margin-right: 8px;
@@ -198,11 +198,9 @@
     .stepCard.show {
         height: 280px;
     }
-
     .arrowBack {
         left: 143px;
     }
-
     .stepCard#personalTest .arrowBack,
     .stepCard#personalDev .arrowBack {
         left: 318px;
@@ -213,23 +211,18 @@
     .item.agency {
         order: 7;
     }
-
     .arrowBack {
         left: 143px;
     }
-
     .step {
         padding: 8px 15px;
     }
-
     .stepCard.show {
         height: 315px;
     }
-
     .stepCard#personalTest.show {
         height: 437px;
     }
-
     .stepCard#personalTest .arrowBack,
     .stepCard#personalDev .arrowBack {
         left: 318px;
@@ -241,44 +234,35 @@
         font-size: 1.2em;
         height: 40px;
     }
-
     .item {
         margin: 3px;
         flex: 100%;
     }
-
     .item.training {
         order: 8;
     }
-
     .steps {
         flex-direction: column;
     }
-
     .step {
         width: 100%;
         margin: 10px 0;
     }
-
     .stepCard.show {
         height: 370px;
         margin: 15px auto;
         padding: 14px;
     }
-
     .stepCard#personalTest.show {
         height: 650px;
     }
-
     .arrowBack {
         left: 170px;
     }
-
     .stepCard#personalTest .arrowBack,
     .stepCard#personalDev .arrowBack {
         left: 170px;
     }
-
     .stepCard#personalTest p {
         margin-bottom: 2px;
     }

@@ -580,6 +580,10 @@ ul.topMenu li a:hover {
     content: '';
 }
 
+.memberWrap {
+    margin: 0 0 15px;
+}
+
 .signOut {
     display: inline-block;
     background-color: #d73e29;
