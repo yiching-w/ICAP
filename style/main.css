@@ -313,6 +313,13 @@ ul.topMenu li a:hover {
     transform: scale(1);
 }
 
+@media (min-width: 1400px) {
+    .fontChange ul li a {
+        width: 33px;
+        height: 33px;
+    }
+}
+
 .searchWrap {
     position: relative;
 }
