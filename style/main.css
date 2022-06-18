@@ -82,6 +82,14 @@ a:focus-within {
     opacity: 1;
 }
 
+button, .btn {
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.06);
+}
 
 /* navbar */
 
@@ -576,15 +584,38 @@ ul.topMenu li a:hover {
 }
 
 .currentTab span::after {
-    content: '\f061';
-    font-family: 'Font Awesome\ 5 Free';
+    content: '/';
+    font-size: 13px;
     font-weight: 600;
-    margin-left: 5px;
+    margin: 0 5px;
     color: var(--primary-darker);
 }
 
 .currentTab span:last-child:after {
     content: '';
+}
+
+.currentPage {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .currentPage {
+        margin-top: 8px;
+    }
+}
+
+.currentPage::after,
+.currentPage::before {
+    content: '-';
+    font-weight: bold;
+    margin: 0 5px;
+    color: var(--primary-darker);
+}
+
+.currentPage a {
+    color: var(--primary-darker);
 }
 
 .memberWrap {
@@ -853,10 +884,14 @@ footer {
 
 .floatNavIcon {
     width: 25px;
-    margin-right: 5px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.floatNavIcon.tool {
+    transform: translateX(-12px);
 }
 
 .floatNavName {
@@ -875,7 +910,7 @@ footer {
 
 .floatNav:hover,
 .floatNav:focus-within {
-    width: 150px;
+    width: 160px;
 }
 
 .floatNav a:focus-within {
@@ -887,6 +922,10 @@ footer {
 .floatNav:focus-within .floatNavName {
     opacity: 1;
     display: flex;
+}
+
+.floatNav:hover .floatNavIcon.tool {
+    transform: translateX(-8px);
 }
 
 .floatNav .dropdownWrap .dropdown,
@@ -920,6 +959,16 @@ footer {
 
 .floatNav .dropdown li:hover {
     background-color: #f2f2f2;
+}
+
+@media (max-width: 578px) {
+    .floatNavIcon.tool img {
+        width: 40px;
+        transform: translateX(10px);
+    }
+    .floatNav:hover .floatNavIcon.tool {
+        transform: translateX(-14px);
+    }
 }
 
 .progressbarWrap {
@@ -971,4 +1020,9 @@ footer {
 .progressbarWrap .progressbar li.active:before {
     background-color: var(--primary-darker);
     color: #fff;
+}
+
+.my-3 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }

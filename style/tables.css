@@ -1,0 +1,83 @@
+.qualified th {
+    width: 11%;
+}
+
+.question span {
+    margin: 0 2px;
+    color: var(--red);
+}
+
+table.resultList {
+    width: 100%;
+}
+
+table.resultList a {
+    text-decoration: underline;
+}
+
+table.resultList a:hover {
+    color: var(--primary-darker);
+}
+
+table.resultList thead tr {
+    height: 30px;
+    background-color: var(--primary-lighter);
+}
+
+table.resultList tbody td {
+    padding: 5px;
+    text-align: center;
+}
+
+table.resultList tbody td:first-child {
+    text-align: left;
+}
+
+table.resultList tbody tr.info td {
+    text-align: left;
+    font-size: 0.9em;
+}
+
+table.resultList tbody tr:nth-of-type(2n) {
+    background-color: var(--light-gray);
+}
+
+
+table.resultList tbody tr:nth-of-type(2n) {
+    background-color: var(--light-gray);
+}
+
+table.normal th:first-child {
+    width: 60px;
+    text-align: center;
+    padding: 0;
+}
+
+table th {
+    background-color: var(--primary-lighter);
+    text-align: left;
+    padding: 10px;
+}
+
+table td {
+    background-color: var(--light-gray);
+}
+
+@media (min-width:767px) {
+    table {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+table.project td {
+    padding: 10px;
+}
+
+table.normal td {
+    padding: 5px 10px;
+}
+
+table.normal tr:nth-of-type(2n) td {
+    background-color: #fff;
+}
