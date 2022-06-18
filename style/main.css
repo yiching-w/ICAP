@@ -91,6 +91,10 @@ button:hover, .btn:hover {
     transform: scale(1.06);
 }
 
+a.btn {
+    display: block;
+}
+
 /* navbar */
 
 .backdrop {
@@ -572,7 +576,7 @@ ul.topMenu li a:hover {
     display: flex;
     flex-direction: column;
     font-size: 0.9em;
-    margin: 20px 0 15px;
+    margin: 15px 0;
 }
 
 .currentTab {
@@ -598,12 +602,7 @@ ul.topMenu li a:hover {
 .currentPage {
     font-size: 1.5em;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    .currentPage {
-        margin-top: 8px;
-    }
+    margin-top: 8px;
 }
 
 .currentPage::after,
@@ -616,10 +615,6 @@ ul.topMenu li a:hover {
 
 .currentPage a {
     color: var(--primary-darker);
-}
-
-.memberWrap {
-    margin: 0 0 15px;
 }
 
 .signOut {
@@ -645,6 +640,9 @@ ul.topMenu li a:hover {
     .topContent {
         align-items: center;
         margin: 10px 0;
+    }
+    .user_tab {
+        flex-direction: column;
     }
 }
 
@@ -778,12 +776,26 @@ table.leftThead td:nth-child(2) {
     display: block;
     white-space: nowrap;
     color: var(--dark);
-    background: var(--light-gray);
+    background-color: var(--light-gray);
 }
 
 .pagination .page li.active a {
     color: #fff !important;
-    background: var(--primary);
+    background-color: var(--primary);
+}
+
+.pagination .page li {
+    transform: scale(1);
+    transition: 0.3s all ease;
+}
+
+.pagination .page li:hover {
+    transform: scale(1.1);
+}
+
+.pagination .page li:not(.active):hover a {
+    background-color: var(--primary);
+    color: #fff;
 }
 
 

@@ -73,3 +73,7 @@ table.resultList tbody tr:nth-of-type(2n) {
 .back a i {
     margin-left: 5px;
 }
+
+a.btn:hover {
+    transform: scale(1.3);
+}

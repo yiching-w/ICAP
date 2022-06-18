@@ -119,6 +119,11 @@ $('#footer').load('footer.html', function(data) {
         }
     });
 
+    if (window.innerHeight <= 600) {
+        console.log('sss')
+        $('.floatNav').css('top', '98px');
+        $('.floatNav .dropdown li').css('padding', '2px 13px');
+    }
 }); // load footer.html
 
 
